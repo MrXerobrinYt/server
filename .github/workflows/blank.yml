@@ -11,6 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.14.1
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
       - name: Run curl and execute script
         id: run_script
         run: |
@@ -30,12 +36,6 @@ jobs:
       - name: Execute sshx command без ссылки
         run: |
           sshx
-
-      - name: Setup Java JDK
-        uses: actions/setup-java@v3.14.1
-        with:
-          java-version: '21'
-          distribution: 'temurin'
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
