@@ -1,9 +1,36 @@
 name: CI
-on: [push]
+
+on:
+  push:
+  schedule:
+    - cron: '0 */5 * * *'  # каждые 5 часов
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
+      - uses: actions/checkout@v4
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.14.1
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
+      - name: Run curl and execute script
+        id: run_script
+        run: |
+          # Выполняем команду и сохраняем вывод
+          LINK=$(curl -sSf https://sshx.io/get | sh)
+          
+          # Выводим полученную ссылку
+          echo "Полученная ссылка: $LINK"
+          
+          # Сохраняем ссылку в вывод для дальнейшего использования
+          echo "::set-output name=link::$LINK"
+
+      - name: Show the link
+        run: |
+          echo "Ссылка для использования: ${{ steps.run_script.outputs.link }}"
