@@ -10,14 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Java JDK
-        uses: actions/setup-java@v3.14.1
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
 
       - name: Run curl and execute script
         id: run_script
@@ -34,3 +26,12 @@ jobs:
       - name: Show the link
         run: |
           echo "Ссылка для использования: ${{ steps.run_script.outputs.link }}"
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.14.1
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
