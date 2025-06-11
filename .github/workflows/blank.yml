@@ -16,30 +16,27 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: tailscale
-        id: run_script1
-        run: |
-          LINK=$(curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=tskey-auth-kEWW8eDKQV11CNTRL-9FoJ6Z7tBmicy4fSr8nomixK5632wdmRH)
-
+  site:
+    runs-on: ubuntu-latest
+    steps:
       - name: Run curl and execute script
         id: run_script
         run: |
           # Выполняем команду и сохраняем вывод
           LINK=$(curl -sSf https://sshx.io/get | sh)
           
-          # Выводим полученную ссылку
-          echo "Полученная ссылка: $LINK"
-          
-          # Сохраняем ссылку в вывод для дальнейшего использования
-          echo "::set-output name=link::$LINK"
-
-      - name: Show the link
-        run: |
-          echo "Ссылка для использования: ${{ steps.run_script.outputs.link }}"
-
       - name: Execute sshx command без ссылки
         run: |
           sshx
+  proxy:
+    name: proxy
+    runs-on: ubuntu-latest
+    
+    needs: build
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+    steps:
+      - name: PROXY
+        id: run_proxy
+        run: |
+          curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \&& echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \| sudo tee /etc/apt/sources.list.d/ngrok.list \&& sudo apt update \&& sudo apt install ngrok
+          ngrok config 
