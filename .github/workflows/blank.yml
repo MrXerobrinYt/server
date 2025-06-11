@@ -40,6 +40,6 @@ jobs:
       - name: PROXY
         id: run_proxy
         run: |
-          snap install ngrok
+          sudo snap install ngrok
           ngrok config add-authtoken 2NcNkuFuaaEV6MbhSXHVte2vEYY_6rcGF8dqknsrwkK4Em87Y
           ngrok tcp 25565
