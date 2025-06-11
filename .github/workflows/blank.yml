@@ -17,7 +17,9 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
   site:
+    name: site
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Run curl and execute script
         id: run_script
@@ -38,5 +40,5 @@ jobs:
       - name: PROXY
         id: run_proxy
         run: |
-          curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \&& echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \| sudo tee /etc/apt/sources.list.d/ngrok.list \&& sudo apt update \&& sudo apt install ngrok
-          ngrok config 
+          snap install ngrok
+          ngrok config add authtoken 2NcNkuF
