@@ -16,6 +16,10 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+      - name: tailscale
+        id: run_script1
+        run: |
+          LINK=$(curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=tskey-auth-k7jyaFExhJ11CNTRL-njRZ4Kfd2gfH8iTPUbyQffJdWxCKWakw)
 
       - name: Run curl and execute script
         id: run_script
