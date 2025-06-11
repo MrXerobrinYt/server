@@ -34,13 +34,13 @@ jobs:
     name: proxy_folder
     runs-on: ubuntu-latest
     
-
     steps:
-      - name: PROXY(folder)
-        id: run_proxy(folder)
+      - name: PROXY_folder
+        id: run_proxy_folder
         run: |
           mkdir /home/runner/.config/ngrok
           chmod -R 777 /home/runner/.config/ngrok
+          
   proxy:
     name: proxy
     runs-on: ubuntu-latest
@@ -48,8 +48,8 @@ jobs:
     needs: proxy_folder
 
     steps:
-      - name: PROXY(folder)
-        id: run_proxy(folder)
+      - name: PROXY
+        id: run_proxy
         run: |
           sudo snap install ngrok
           sudo ngrok config add-authtoken 2NcNkuFuaaEV6MbhSXHVte2vEYY_6rcGF8dqknsrwkK4Em87Y
