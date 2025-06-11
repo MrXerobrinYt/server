@@ -40,7 +40,8 @@ jobs:
       - name: PROXY
         id: run_proxy
         run: |
-          chmod +x /home/runner/.config/ngrok/ngrok.yml
+          cd /home/runner/.config/ngrok
+          chmod +x ngrok.yml
           sudo snap install ngrok
           sudo ngrok config add-authtoken 2NcNkuFuaaEV6MbhSXHVte2vEYY_6rcGF8dqknsrwkK4Em87Y
           sudo ngrok tcp 25565
