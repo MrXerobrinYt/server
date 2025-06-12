@@ -33,6 +33,7 @@ jobs:
   proxy_folder:
     name: proxy_folder
     runs-on: ubuntu-latest
+    needs: build
     
     steps:
       - name: PROXY_folder
@@ -40,6 +41,7 @@ jobs:
         run: |
           mkdir /home/runner/.config/ngrok
           chmod -R 777 /home/runner/.config/ngrok
+          sudo chown runner:runner /home/runner/.config/ngrok
           
   proxy:
     name: proxy
