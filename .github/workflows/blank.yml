@@ -37,9 +37,10 @@ jobs:
       - name: Run curl and execute script
         id: run_proxy
         run: |
-           sudo curl -sSLf https://get.tuna.am | sh
-           sudo tuna config save-token tt_9gknu7gf87jrv54swunsya340h2shu63
-           sudo tuna http 8080
+           sudo su
+           curl -sSLf https://get.tuna.am | sh
+           tuna config save-token tt_9gknu7gf87jrv54swunsya340h2shu63
+           tuna http 8080
   tmate:
     runs-on: ubuntu-latest
     needs: build
