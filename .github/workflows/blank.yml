@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run curl and execute script
-        id: run_script
-        run: |
-          # Выполняем команду и сохраняем вывод
-           curl -sSf https://sshx.io/get | sh
-
       - name: Setup Java JDK
         uses: actions/setup-java@v3.14.1
         with:
@@ -26,8 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-          
-      - name: Execute sshx command без ссылки
+      - name: Run curl and execute script
+        id: run_script
+        run: |
+          # Выполняем команду и сохраняем вывод
+           curl -sSf https://sshx.io/get | sh
+      - name: sshx 
         run: |
           sshx
   proxy:
