@@ -28,17 +28,6 @@ jobs:
       - name: sshx 
         run: |
           sshx
-  proxy:
-    name: proxy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run curl and execute script
-        id: run_proxy
-        run: |
-           sudo su
-           curl -sSLf https://get.tuna.am | sh
-           tuna config save-token tt_9gknu7gf87jrv54swunsya340h2shu63
-           tuna http 8080
   tmate:
     runs-on: ubuntu-latest
     needs: build
@@ -55,9 +44,8 @@ jobs:
     steps:
       - name: Скачать ngrok
         run: |
-          wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-          unzip ngrok-stable-linux-amd64.zip
-          sudo mv ngrok /usr/local/bin/
+          wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+          sudo tar -xvzf ~/Downloads/ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
       - name: Аутентификация ngrok
         run: |
           ngrok authtoken $NGROK_AUTH_TOKEN
@@ -72,8 +60,11 @@ jobs:
           unzip main.zip
           cd server-main
           nohup java -Xmx6144M -Xms1024M -jar paper-1.21.5-113.jar nogui &
-          sleep 10 # подождать, пока сервер запустится
+          sleep 360 # подождать, пока сервер запустится
       - name: Запуск туннеля на порт 25565 (Minecraft)
         run: |
           nohup ngrok tcp 25565 --log=ngrok.log &
           sleep 5 # подождать, пока туннель запустится
+      - name: Получить публичный адрес Minecraft через ngrok
+        run: |
+          curl --silent http://localhost:4040/api/tunnels | jq -r '.tunnels[] | select(.proto=="tcp") | .public_url'
