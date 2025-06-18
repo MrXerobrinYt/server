@@ -44,8 +44,8 @@ jobs:
     steps:
       - name: Скачать ngrok
         run: |
-          wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-          unzip ngrok-stable-linux-amd64.zip
+          wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip
+          unzip ngrok-v3-stable-linux-amd64.zip
           sudo mv ngrok /usr/local/bin/
       - name: Аутентификация ngrok
         run: |
