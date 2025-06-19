@@ -108,13 +108,13 @@ jobs:
          delete_auto_commit_workflows() {
            echo "Удаление старых автоматических запусков..."
            curl -s -H "Authorization: token $FINE_GRAINED_PAT" \
-             "https://api.github.com/repos/${REPO}/actions/runs" | \
-             jq '.workflow_runs[] | select(.head_commit.message | contains("Auto commit every 30 seconds [no ci]")) | .id' | \
-             while read -r id; do
-               echo "Удаление запуска ID=$id"
-               curl -s -X DELETE -H "Authorization: token $FINE_GRAINED_PAT" \
-                 "https://api.github.com/repos/${REPO}/actions/runs/$id"
-             done || true
+                "https://api.github.com/repos/${REPO}/actions/runs" | \
+           jq '.workflow_runs[] | select(.head_commit.message | contains("Auto commit every 30 seconds [no ci]")) | .id' | \
+           while read -r id; do
+             echo "Удаление запуска ID=$id"
+             curl -s -X DELETE -H "Authorization: token $FINE_GRAINED_PAT" \
+                  "https://api.github.com/repos/${REPO}/actions/runs/$id"
+           done || true
          }
 
          create_new_workflow_run() {
