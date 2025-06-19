@@ -30,7 +30,7 @@ jobs:
       - name: Cache apt packages
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: 
+          packages: cloudflared
             # Здесь можно оставить пустым или убрать, так как cloudflared больше не нужен
             # или оставить для других пакетов, если есть.
           version: 1.0
