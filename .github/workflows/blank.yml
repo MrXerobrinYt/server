@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ "playit-only" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "playit-only" ]
+    branches: [ "main" ]
   workflow_dispatch:
   schedule:
     - cron: '0 */5 * * *'  # Run every 5 hours
@@ -13,21 +13,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-<<<<<<< HEAD
           token: ${{ secrets.FINE_GRAINED_PAT }}  # Use fine-grained PAT for checkout
-=======
           fetch-depth: 1
           fetch-tags: false
           persist-credentials: true
-          token: ${{ secrets.FINE_GRAINED_PAT }}
 
->>>>>>> c8a219f1e617f5b095a8a578b1e264a224ae59d2
       - uses: graalvm/setup-graalvm@v1
         with:
           java-version: '22'
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
-<<<<<<< HEAD
       - name: Debug - List directory contents
         run: ls -la
       - name: Run Spigot and playit with 30-second commits and workflow deletion
@@ -49,7 +44,6 @@ jobs:
           PLAYIT_PID=$!
           echo "playit started with PID $PLAYIT_PID"
           # Function to commit and push changes
-=======
 
       # Удалены шаги по добавлению репозитория Cloudflare и установке cloudflared
 
@@ -92,7 +86,6 @@ jobs:
 
           # В этом случае мы не запускаем cloudflared туннель, поэтому убираем start_cloudflared()
 
->>>>>>> c8a219f1e617f5b095a8a578b1e264a224ae59d2
           commit_and_push() {
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
@@ -158,16 +151,13 @@ jobs:
             done
           }
 
-<<<<<<< HEAD
           
           START_TIME=$(date +%s)
           
           # Schedule the cancellation of old workflow runs after 30 seconds
           (sleep 30 && cancel_old_workflow_runs) &
           (sleep 20 && rm credentials.json) &
-=======
           start_spigot
->>>>>>> c8a219f1e617f5b095a8a578b1e264a224ae59d2
 
           START_TIME=$(date +%s)
 
@@ -179,11 +169,8 @@ jobs:
             if ! commit_and_push; then
                 echo "Commit and push failed, continuing without stopping the workflow"
             fi
-<<<<<<< HEAD
-=======
             
             delete_auto_commit_workflows
->>>>>>> c8a219f1e617f5b095a8a578b1e264a224ae59d2
             
             CURRENT_TIME=$(date +%s)
             ELAPSED_TIME=$((CURRENT_TIME - START_TIME))
@@ -193,22 +180,17 @@ jobs:
               start_spigot
             fi
 
-<<<<<<< HEAD
             if ! kill -0 $PLAYIT_PID 2>/dev/null || [ $ELAPSED_TIME -ge 18000 ]; then
               if ! kill -0 $PLAYIT_PID 2>/dev/null; then
                 echo "PlayIt Tunnel process has stopped."
               else
                 echo "Workflow has been running for 5 hours."
               fi
-=======
-            # Без cloudflared проверка на время работы не требуется, только по времени.
             
             if [ "$ELAPSED_TIME" -ge 18000 ]; then # 5 часов = 18000 секунд 
               echo "Workflow has been running for 5 hours."
               
-              # Можно просто завершить цикл или перезапустить рабочий процесс.
               
->>>>>>> c8a219f1e617f5b095a8a578b1e264a224ae59d2
               echo "Creating new workflow run and exiting current one."
               
               create_new_workflow_run
@@ -227,11 +209,9 @@ jobs:
         run: |
           curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
-<<<<<<< HEAD
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/blank.yml/dispatches" \
             -d '{"ref":"playit-only"}'
           echo "Workflow rerun triggered due to previous step failure"
-=======
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/CI.yml/dispatches" \
             -d '{"ref":"main"}'
 >>>>>>> c8a219f1e617f5b095a8a578b1e264a224ae59d2
