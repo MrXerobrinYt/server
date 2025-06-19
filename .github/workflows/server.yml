@@ -1,0 +1,109 @@
+name: Minecraft Server with Ngrok
+
+on:
+  schedule:
+    - cron: '0 */5 * * *'  # Каждые 5 часов
+  workflow_dispatch:     # Возможность запускать вручную
+
+jobs:
+  run-minecraft:
+    runs-on: ubuntu-latest
+
+    env:
+      MINECRAFT_VERSION: '1.21.5'   # Укажите нужную версию
+      MINECRAFT_SERVER_JAR: 'server.jar'
+      SERVER_DIR: ${{ github.workspace }}/minecraft_server
+      CACHE_DIR: ${{ github.workspace }}/cache
+      NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+
+    steps:
+      - name: Проверка кода репозитория
+        uses: actions/checkout@v3
+
+      - name: Создание папки для кеша
+        run: |
+          mkdir -p "$CACHE_DIR"
+
+      - name: Скачивание Java, если не закеширована
+        id: java
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_DIR }}/java
+          key: java-${{ runner.os }}-${{ env.MINECRAFT_VERSION }}
+          restore-keys: |
+            java-${{ runner.os }}-
+
+        continue-on-error: true
+
+      - name: Установка Java (если не было кеша)
+        if: steps.java.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-17-jdk
+          mkdir -p "$CACHE_DIR/java"
+          echo "Java установлен"
+
+      - name: Скачивание файла сервера Minecraft, если не закеширован
+        id: minecraft_jar
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_DIR }}/minecraft_server.jar
+          key: minecraft-${{ env.MINECRAFT_VERSION }}
+          restore-keys: |
+            minecraft-
+
+        continue-on-error: true
+
+      - name: Скачивание файла сервера Minecraft (если не было кеша)
+        if: steps.minecraft_jar.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p "$SERVER_DIR"
+          cd "$SERVER_DIR"
+          
+          # Получение URL для скачивания нужной версии Minecraft Server
+          VERSION_URL=$(curl -s https://launchermeta.mojang.com/mc/game/version_manifest.json | jq -r --arg VERSION "$MINECRAFT_VERSION" '.versions[] | select(.id==$VERSION) | .url')
+          
+          SERVER_DOWNLOAD_URL=$(curl -s "$VERSION_URL" | jq -r '.downloads.server.url')
+          
+          wget -O "$MINECRAFT_SERVER_JAR" "$SERVER_DOWNLOAD_URL"
+          
+      - name: Подготовка файлов сервера (при необходимости)
+        run: |
+          # Можно добавить дополнительные настройки или файлы, если нужно
+
+      - name: Запуск ngrok для проброса порта
+        run: |
+          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+          unzip ngrok-stable-linux-amd64.zip
+          ./ngrok authtoken $NGROK_AUTH_TOKEN
+          
+          # Запускаем ngrok в фоновом режиме и сохраняем публичный адрес
+          ./ngrok tcp 25565 --log=stdout > ngrok.log &
+          
+          # Ждем пока туннель установится и получим публичный адрес
+          sleep 10
+
+      - name: Получение публичного адреса ngrok
+        id: get_ngrok_url
+        run: |
+          sleep 5  # подождать, чтобы туннель установился
+          
+          NGROK_URL=$(curl --silent http://localhost:4040/api/tunnels | jq -r '.tunnels[] | select(.proto=="tcp") | .public_url')
+          
+          echo "ngrok_url=$NGROK_URL" >> $GITHUB_OUTPUT
+
+      - name: Запуск сервера Minecraft в фоновом режиме
+        run: |
+          cd "$SERVER_DIR"
+          
+          nohup java -Xmx1024M -Xms1024M -jar "$MINECRAFT_SERVER_JAR" nogui &
+          
+          echo "Сервер Minecraft запущен"
+
+      - name: Сохранение файлов сервера перед перезагрузкой (при необходимости)
+        run: |
+          # Можно архивировать или сохранять важные файлы перед перезагрузкой.
+          
+      - name: Ожидание следующего запуска или ручной перезагрузки через 5 часов (эмуляция)
+        run: |
+          echo "Ожидание 5 часов перед перезагрузкой..."
