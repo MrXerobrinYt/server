@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1  # Fetch all history for all branches and tags
+          fetch-depth: 1
           fetch-tags: false
           persist-credentials: true
-          token: ${{ secrets.FINE_GRAINED_PAT }}  # Use fine-grained PAT for checkout
+          token: ${{ secrets.FINE_GRAINED_PAT }}
 
       - uses: graalvm/setup-graalvm@v1
         with:
@@ -25,10 +25,18 @@ jobs:
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      # Удаляем шаги по добавлению репозитория Cloudflare и установке cloudflared
+
+      - name: Cache apt packages
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: cloudflared
+          version: 1.0
+
       - name: Debug - List directory contents
         run: ls -la
-      
-      - name: Run Spigot and cloudflared with auto-restart and workflow recreation
+
+      - name: Run Spigot with auto-restart and workflow recreation (без Cloudflare)
         if: "!contains(github.event.head_commit.message, 'Auto commit every 30 seconds [no ci]')"
         continue-on-error: true
         env:
@@ -37,17 +45,39 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
 
+          # Удаляем все связанные с Cloudflare настройки и файлы
+          
+          # Запуск Spigot (оставляем как есть)
           start_spigot() {
             echo "Starting Spigot..."
-            java -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -Xms16G -Xmx16G -jar spigot.jar nogui 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
+            java -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 \
+              -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
+              -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 \
+              -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M \
+              -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 \
+              -XX:G1MixedGCCountTarget=4 \
+              -XX:InitiatingHeapOccupancyPercent=15 \
+              -XX:G1MixedGCLiveThresholdPercent=90 \
+              -XX:G1RSetUpdatingPauseTimePercent=5 \
+              -XX:SurvivorRatio=32 \
+              -XX:+PerfDisableSharedMem \
+              -XX:MaxTenuringThreshold=1 \
+              -Dusing.aikars.flags=https://mcflags.emc.gs \
+              -Daikars.new.flags=true \
+              -Xms16G -Xmx16G -jar spigot.jar nogui 2>&1 | sed '/login:/s/.*/<REDACTED>/'
             SPIGOT_PID=$!
             echo "Spigot started with PID $SPIGOT_PID"
           }
+
+          # В этом случае мы не запускаем cloudflared туннель, поэтому убираем start_cloudflared()
 
           commit_and_push() {
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add -A  # Stage all changes
+            git reset -- tunnel-config.yml
+            git reset -- credentials.json
+            git reset -- logs/
             
             if ! git commit -m "Auto commit every 30 seconds [no ci]"; then
                 echo "No changes to commit or commit failed"
@@ -100,16 +130,18 @@ jobs:
           }
 
           start_spigot
-          
-          START_TIME=$(date +%s)
-          
-          (sleep 30 && cancel_old_workflow_runs) &
-          (sleep 20 && rm credentials.json) &
 
+          START_TIME=$(date +%s)
+
+          (sleep 30 && cancel_old_workflow_runs) &
+          
+          # Удаляем credentials.json сразу после запуска, так как туннель больше не нужен.
+          
           while true; do
             if ! commit_and_push; then
                 echo "Commit and push failed, continuing without stopping the workflow"
             fi
+            
             delete_auto_commit_workflows
             
             CURRENT_TIME=$(date +%s)
@@ -118,15 +150,26 @@ jobs:
             if ! kill -0 $SPIGOT_PID 2>/dev/null; then
               echo "Spigot process has stopped. Restarting Spigot..."
               start_spigot
-              fi
+            fi
+
+            # Без cloudflared проверка на время работы не требуется, только по времени.
+            
+            if [ "$ELAPSED_TIME" -ge 18000 ]; then # 5 часов = 18000 секунд 
+              echo "Workflow has been running for 5 hours."
+              
+              # Можно просто завершить цикл или перезапустить рабочий процесс.
+              
               echo "Creating new workflow run and exiting current one."
+              
               create_new_workflow_run
+              
               exit 0
             fi
             
             sleep 30
           done
 
+      # Обработка ошибок для повторного запуска при сбое предыдущего шага остается без изменений.
       - name: Rerun workflow if previous step failed
         if: failure()
         env:
@@ -136,4 +179,4 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/CI.yml/dispatches" \
             -d '{"ref":"main"}'
-          echo "Workflow rerun triggered due to previous step failure"
+          
