@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 0:0:0:0:0:0:0:1
+ip-address: 127.124.125.35
 afk: false
 socialspy: false
 npc: false
@@ -11,28 +11,20 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1723158712824
+  lastteleport: 0
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723159068773
-  login: 1723159060310
+  logout: 1725824199361
+  login: 1725824311310
 money: '0'
 last-account-name: Briiqn
 logoutlocation:
-  world: 6db25809-c288-4f61-ad52-b0daa6a42e35
+  world: 26fdd2cc-949e-4147-898f-cfb1b5dfab7d
   world-name: world
-  x: -1120.3583122840398
-  y: 69.5155550727022
-  z: -281.8115529502112
-  yaw: 322.4866027832031
-  pitch: 27.977720260620117
-lastlocation:
-  world: 6db25809-c288-4f61-ad52-b0daa6a42e35
-  world-name: world
-  x: -1130.012227250742
-  y: 55.0
-  z: -287.7612038297126
-  yaw: -135.50025939941406
-  pitch: -7.22464656829834
+  x: 1719.7372673945006
+  y: 4.0
+  z: -71.0720868227419
+  yaw: 305.6726989746094
+  pitch: 24.25911521911621
