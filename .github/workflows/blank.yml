@@ -1,6 +1,7 @@
 _dispatch:
   schedule:
     - cron: '0 */5 * * *'  # Запуск каждые 5 часов
+
 jobs:
   build:
     runs-on: ubuntu-24.04
@@ -39,7 +40,7 @@ jobs:
           # Запись секрета в конфигурационный файл
           echo "$PLAYIT_SECRET" > playit.toml
 
-          # Запуск Spigot сервера с настройками JVM
+          # Запуск Spigot сервера с настройками JVM (замените на реальные параметры)
           echo "Запуск Spigot..."
           java -XX:+UseG1GC ... -jar spigot.jar nogui 2>&1 | sed '/login:/s/.*/<REDACTED>/'
           
@@ -74,7 +75,8 @@ jobs:
             java ... -jar spigot.jar nogui 2>&1 | sed '/login:/s/.*/<REDACTED>/'
             SPIGOT_PID=$!
             echo "Spigot запущен с PID $SPIGOT_PID"
-            return $SPIGOT_PID
+            echo "$SPIGOT_PID"
+            return
           }
 
           commit_and_push() {
