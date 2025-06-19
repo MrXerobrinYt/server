@@ -214,4 +214,3 @@ jobs:
           echo "Workflow rerun triggered due to previous step failure"
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/CI.yml/dispatches" \
             -d '{"ref":"main"}'
->>>>>>> c8a219f1e617f5b095a8a578b1e264a224ae59d2
