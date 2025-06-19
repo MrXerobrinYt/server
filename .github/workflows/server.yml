@@ -118,7 +118,7 @@ jobs:
       # Загружаем артефакты для скачивания после завершения работы.
       
       - name: Сохранить артефакты (логи и файлы)
-        uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
         with:
           name: minecraft-server-logs-and-files
           path: artifacts/
