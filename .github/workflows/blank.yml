@@ -187,18 +187,16 @@ jobs:
                 echo "Workflow has been running for 5 hours."
               fi
             
-            if [ "$ELAPSED_TIME" -ge 18000 ]; then # 5 часов = 18000 секунд 
-              echo "Workflow has been running for 5 hours."
-              
-              
-              echo "Creating new workflow run and exiting current one."
+              if [ "$ELAPSED_TIME" -ge 18000 ]; then # 5 часов = 18000 секунд 
+                echo "Workflow has been running for 5 hours."
+                echo "Creating new workflow run and exiting current one."
               
               create_new_workflow_run
               
               exit 0
             fi
-            
-            sleep 30
+          fi
+          sleep 30
           done
 
       # Обработка ошибок для повторного запуска при сбое предыдущего шага остается без изменений.
