@@ -24,19 +24,6 @@ jobs:
           java-version: '22'
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Add Cloudflare repository
-        run: |
-          sudo mkdir -p --mode=0755 /usr/share/keyrings
-          curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
-          echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
-          sudo apt-get update
-
-      - name: Cache apt packages
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: cloudflared
-          version: 1.0
 
       - name: Debug - List directory contents
         run: ls -la
@@ -47,18 +34,8 @@ jobs:
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
           REPO: ${{ github.repository }}
-          CF_TUNNEL_CERT: ${{secrets.CF_CERT}}
-          CF_TUNNEL_UUID: ${{secrets.CF_TUNNEL_UUID_1}}
-          CF_TUNNEL_UUID_CONTENT: ${{secrets.CF_TUNNEL_UUID_CONTENT}}
         run: |
           cd $GITHUB_WORKSPACE
-          mkdir ~/.cloudflared
-          echo "${CF_TUNNEL_CERT}" > ~/.cloudflared/cert.pem
-          touch tunnel-config.yml
-          echo "${CF_TUNNEL_UUID_CONTENT}" > credentials.json
-          echo "url: tcp://localhost:25565" >> tunnel-config.yml
-          echo "tunnel: ${CF_TUNNEL_UUID}" >> tunnel-config.yml
-          echo "credentials-file: credentials.json" >> tunnel-config.yml
 
           start_spigot() {
             echo "Starting Spigot..."
@@ -67,19 +44,10 @@ jobs:
             echo "Spigot started with PID $SPIGOT_PID"
           }
 
-          start_cloudflared() {
-            cloudflared tunnel --config tunnel-config.yml run ${CF_TUNNEL_UUID} &
-            CLOUDFLARED_PID=$!
-            echo "Cloudflare Tunnel started with PID $CLOUDFLARED_PID"
-          }
-
           commit_and_push() {
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add -A  # Stage all changes
-            git reset -- tunnel-config.yml
-            git reset -- credentials.json
-            git reset -- logs/
             
             if ! git commit -m "Auto commit every 30 seconds [no ci]"; then
                 echo "No changes to commit or commit failed"
@@ -132,7 +100,6 @@ jobs:
           }
 
           start_spigot
-          start_cloudflared
           
           START_TIME=$(date +%s)
           
@@ -151,13 +118,6 @@ jobs:
             if ! kill -0 $SPIGOT_PID 2>/dev/null; then
               echo "Spigot process has stopped. Restarting Spigot..."
               start_spigot
-            fi
-
-            if ! kill -0 $CLOUDFLARED_PID 2>/dev/null || [ $ELAPSED_TIME -ge 18000 ]; then
-              if ! kill -0 $CLOUDFLARED_PID 2>/dev/null; then
-                echo "Cloudflare Tunnel process has stopped."
-              else
-                echo "Workflow has been running for 5 hours."
               fi
               echo "Creating new workflow run and exiting current one."
               create_new_workflow_run
