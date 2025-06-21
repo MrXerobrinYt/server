@@ -3,17 +3,11 @@ header-footer:
   enabled: true
   header:
     - "<#FFFFFF>&m                                                </#FFFF00>"
-    - "&3&lServer name"
-    - "&r&7&l>> %animation:Welcome%&3 &l%player%&7&l! &7&l<<"
-    - "&r&7Online players: &f%online%"
-    - "&6Online staff: &e%staffonline%"
+    - "&3&lMIGMA"
     - ""
   footer:
-    - "%animation:time%"
     - "&2Ping: %ping%"
-    - "&7&l Used memory: %memory-used% MB / %memory-max% MB"
     - ""
-    - "&r&7Visit our webpage %animation:web%"
     - "<#FFFFFF>&m                                                </#FFFF00>"
   disable-condition: '%world%=disabledworld'
   per-world:
@@ -51,7 +45,7 @@ scoreboard-teams:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Playerlist-Objective
 playerlist-objective:
-  enabled: true
+  enabled: false
   value: "%ping%"
   fancy-value: "&7Ping: %ping%"
   title: "TAB" # Only visible on Bedrock Edition
