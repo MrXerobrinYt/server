@@ -1,1394 +1,1405 @@
 oak_crate:
-  displayname: "<white>Oak Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/oak_crate.png
+    - blocks_expansion/oak_crate.png
+    custom_model_data: 1065
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 1
-    model: oak_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: oak_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 52
+      model: oak_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: oak_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Oak Crate
 spruce_crate:
-  displayname: "<white>Spruce Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/spruce_crate.png
+    - blocks_expansion/spruce_crate.png
+    custom_model_data: 1066
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 2
-    model: spruce_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: spruce_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 53
+      model: spruce_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: spruce_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Spruce Crate
 dark_oak_crate:
-  displayname: "<white>Dark Oak Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/dark_oak_crate.png
+    - blocks_expansion/dark_oak_crate.png
+    custom_model_data: 1067
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 3
-    model: dark_oak_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: dark_oak_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 54
+      model: dark_oak_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: dark_oak_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Dark Oak Crate
 acacia_crate:
-  displayname: "<white>Acacia Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/acacia_crate.png
+    - blocks_expansion/acacia_crate.png
+    custom_model_data: 1068
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 4
-    model: acacia_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: acacia_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 55
+      model: acacia_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: acacia_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Acacia Crate
 jungle_crate:
-  displayname: "<white>Jungle Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/jungle_crate.png
+    - blocks_expansion/jungle_crate.png
+    custom_model_data: 1069
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 5
-    model: jungle_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: jungle_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 56
+      model: jungle_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: jungle_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Jungle Crate
 birch_crate:
-  displayname: "<white>Birch Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/birch_crate.png
+    - blocks_expansion/birch_crate.png
+    custom_model_data: 1070
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 6
-    model: birch_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: birch_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 57
+      model: birch_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: birch_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Birch Crate
 mangrove_crate:
-  displayname: "<white>Mangrove Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/mangrove_crate.png
+    - blocks_expansion/mangrove_crate.png
+    custom_model_data: 1071
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 7
-    model: mangrove_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: mangrove_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 58
+      model: mangrove_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: mangrove_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Mangrove Crate
 crimson_crate:
-  displayname: "<white>Crimson Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/crimson_crate.png
+    - blocks_expansion/crimson_crate.png
+    custom_model_data: 1072
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 8
-    model: crimson_crate
-    hardness: 6
-    drop:
-#Chernyash Moment leak
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: crimson_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 59
+      model: crimson_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: crimson_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Crimson Crate
 warped_crate:
-  displayname: "<white>Warped Crate"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/warped_crate.png
+    - blocks_expansion/warped_crate.png
+    custom_model_data: 1073
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.wood.break
-      place_sound: block.wood.place
-    custom_variation: 9
-    model: warped_crate
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - AXE
-      loots:
-        - {oraxen_item: warped_crate, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.wood.break
+        place_sound: block.wood.place
+      custom_variation: 60
+      model: warped_crate
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: warped_crate
+        best_tool: AXE
+      type: NOTEBLOCK
+  itemname: <white>Warped Crate
 kitchen_tile:
-  displayname: "<white>Kitchen Tile"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/kitchen_tile.png
+    - blocks_expansion/kitchen_tile.png
+    custom_model_data: 1074
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 10
-    model: kitchen_tile
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: kitchen_tile, probability: 1.0}
-        
-#Chert
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 61
+      model: kitchen_tile
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: kitchen_tile
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Kitchen Tile
 chert:
-  displayname: "<white>Chert"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/chert.png
+    - blocks_expansion/chert.png
+    custom_model_data: 1075
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 11
-    model: chert
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chert, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 62
+      model: chert
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chert
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chert
 chert_bricks:
-  displayname: "<white>Chert Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/chert_bricks.png
+    - blocks_expansion/chert_bricks.png
+    custom_model_data: 1076
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 12
-    model: chert_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chert_bricks, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 63
+      model: chert_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chert_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chert Bricks
 polished_chert:
-  displayname: "<white>Polished Chert"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_chert.png
+    - blocks_expansion/polished_chert.png
+    custom_model_data: 1077
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 13
-    model: polished_chert
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_chert, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 64
+      model: polished_chert
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_chert
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Chert
 cut_chert:
-  displayname: "<white>Cut Chert"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_chert.png
+    - blocks_expansion/cut_chert.png
+    custom_model_data: 1078
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 14
-    model: cut_chert
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_chert, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 65
+      model: cut_chert
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_chert
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Chert
 chert_pillar:
-  displayname: "<white>Chert Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/chert_pillar_top.png
-      - blocks_expansion/chert_pillar_side.png
+    - blocks_expansion/chert_pillar_top.png
+    - blocks_expansion/chert_pillar_side.png
+    custom_model_data: 1079
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 15
-    model: chert_pillar
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chert_pillar, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 66
+      model: chert_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chert_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chert Pillar
 chiseled_chert:
-  displayname: "<white>Chiseled Chert"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/chiseled_chert_top.png
-      - blocks_expansion/chiseled_chert_side.png
+    - blocks_expansion/chiseled_chert_top.png
+    - blocks_expansion/chiseled_chert_side.png
+    custom_model_data: 1080
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 16
-    model: chiseled_chert
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_chert, probability: 1.0}
-        
-#Kyanite
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 67
+      model: chiseled_chert
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_chert
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Chert
 kyanite:
-  displayname: "<white>Kyanite"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/kyanite.png
+    - blocks_expansion/kyanite.png
+    custom_model_data: 1081
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 17
-    model: kyanite
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: kyanite, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 68
+      model: kyanite
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: kyanite
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Kyanite
 kyanite_bricks:
-  displayname: "<white>Kyanite Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/kyanite_bricks.png
+    - blocks_expansion/kyanite_bricks.png
+    custom_model_data: 1082
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 18
-    model: kyanite_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: kyanite_bricks, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 69
+      model: kyanite_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: kyanite_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Kyanite Bricks
 polished_kyanite:
-  displayname: "<white>Polished Kyanite"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_kyanite.png
+    - blocks_expansion/polished_kyanite.png
+    custom_model_data: 1083
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 19
-    model: polished_kyanite
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_kyanite, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 70
+      model: polished_kyanite
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_kyanite
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Kyanite
 cut_kyanite:
-  displayname: "<white>Cut Kyanite"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_kyanite.png
+    - blocks_expansion/cut_kyanite.png
+    custom_model_data: 1084
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 20
-    model: cut_kyanite
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_kyanite, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 71
+      model: cut_kyanite
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_kyanite
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Kyanite
 kyanite_pillar:
-  displayname: "<white>Kyanite Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/kyanite_pillar_top.png
-      - blocks_expansion/kyanite_pillar_side.png
+    - blocks_expansion/kyanite_pillar_top.png
+    - blocks_expansion/kyanite_pillar_side.png
+    custom_model_data: 1085
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 21
-    model: kyanite_pillar
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: kyanite_pillar, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 72
+      model: kyanite_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: kyanite_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Kyanite Pillar
 chiseled_kyanite:
-  displayname: "<white>Chiseled Kyanite"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/chiseled_kyanite_top.png
-      - blocks_expansion/chiseled_kyanite_side.png
+    - blocks_expansion/chiseled_kyanite_top.png
+    - blocks_expansion/chiseled_kyanite_side.png
+    custom_model_data: 1086
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 22
-    model: chiseled_kyanite
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_kyanite, probability: 1.0}
-
-#shale
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 73
+      model: chiseled_kyanite
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_kyanite
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Kyanite
 shale:
-  displayname: "<white>Shale"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/shale.png
+    - blocks_expansion/shale.png
+    custom_model_data: 1087
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 23
-    model: shale
-    hardness: 6
-    drop:
-#Cher4nyash Moment 4leak
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: shale, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 74
+      model: shale
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: shale
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Shale
 shale_bricks:
-  displayname: "<white>Shale Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/shale_bricks.png
+    - blocks_expansion/shale_bricks.png
+    custom_model_data: 1088
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 24
-    model: shale_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: shale_bricks, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 125
+      model: shale_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: shale_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Shale Bricks
 polished_shale:
-  displayname: "<white>Polished Shale"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_shale.png
+    - blocks_expansion/polished_shale.png
+    custom_model_data: 1089
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 25
-    model: polished_shale
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_shale, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 101
+      model: polished_shale
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_shale
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Shale
 cut_shale:
-  displayname: "<white>Cut Shale"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_shale.png
+    - blocks_expansion/cut_shale.png
+    custom_model_data: 1090
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 26
-    model: cut_shale
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_shale, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 102
+      model: cut_shale
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_shale
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Shale
 shale_pillar:
-  displayname: "<white>Shale Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/shale_pillar_top.png
-      - blocks_expansion/shale_pillar_side.png
+    - blocks_expansion/shale_pillar_top.png
+    - blocks_expansion/shale_pillar_side.png
+    custom_model_data: 1091
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 27
-    model: shale_pillar
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: shale_pillar, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 103
+      model: shale_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: shale_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Shale Pillar
 chiseled_shale:
-  displayname: "<white>Chiseled Shale"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/chiseled_shale_top.png
-      - blocks_expansion/chiseled_shale_side.png
+    - blocks_expansion/chiseled_shale_top.png
+    - blocks_expansion/chiseled_shale_side.png
+    custom_model_data: 1092
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 28
-    model: chiseled_shale
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_shale, probability: 1.0}
-
-#Arkose
-
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 104
+      model: chiseled_shale
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_shale
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Shale
 arkose:
-  displayname: "<white>Arkose"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/arkose.png
+    - blocks_expansion/arkose.png
+    custom_model_data: 1093
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 29
-    model: arkose
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: arkose, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 105
+      model: arkose
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: arkose
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Arkose
 arkose_bricks:
-  displayname: "<white>Arkose Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/arkose_bricks.png
+    - blocks_expansion/arkose_bricks.png
+    custom_model_data: 1094
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 30
-    model: arkose_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: arkose_bricks, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 106
+      model: arkose_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: arkose_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Arkose Bricks
 polished_arkose:
-  displayname: "<white>Polished Arkose"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_arkose.png
+    - blocks_expansion/polished_arkose.png
+    custom_model_data: 1095
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 31
-    model: polished_arkose
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_arkose, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 107
+      model: polished_arkose
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_arkose
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Arkose
 cut_arkose:
-  displayname: "<white>Cut Arkose"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_arkose.png
+    - blocks_expansion/cut_arkose.png
+    custom_model_data: 1096
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 32
-    model: cut_arkose
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_arkose, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 108
+      model: cut_arkose
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_arkose
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Arkose
 arkose_pillar:
-  displayname: "<white>Arkose Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/arkose_pillar_top.png
-      - blocks_expansion/arkose_pillar_side.png
+    - blocks_expansion/arkose_pillar_top.png
+    - blocks_expansion/arkose_pillar_side.png
+    custom_model_data: 1097
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 33
-    model: arkose_pillar
-    hardness: 6
-    drop:
-#Chhernyash M0ment leak
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: arkose_pillar, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 109
+      model: arkose_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: arkose_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Arkose Pillar
 chiseled_arkose:
-  displayname: "<white>Chiseled Arkose"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/chiseled_arkose.png
+    - blocks_expansion/chiseled_arkose.png
+    custom_model_data: 1098
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 34
-    model: chiseled_arkose
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_arkose, probability: 1.0}  
-
-#Greenschist
-
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 110
+      model: chiseled_arkose
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_arkose
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Arkose
 greenschist:
-  displayname: "<white>Greenschist"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/greenschist.png
+    - blocks_expansion/greenschist.png
+    custom_model_data: 1099
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 35
-    model: greenschist
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: greenschist, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 111
+      model: greenschist
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: greenschist
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Greenschist
 greenschist_bricks:
-  displayname: "<white>Greenschist Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/greenschist_bricks.png
+    - blocks_expansion/greenschist_bricks.png
+    custom_model_data: 1100
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 36
-    model: greenschist_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: greenschist_bricks, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 112
+      model: greenschist_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: greenschist_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Greenschist Bricks
 polished_greenschist:
-  displayname: "<white>Polished Greenschist"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_greenschist.png
+    - blocks_expansion/polished_greenschist.png
+    custom_model_data: 1101
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 37
-    model: polished_greenschist
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_greenschist, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 113
+      model: polished_greenschist
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_greenschist
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Greenschist
 cut_greenschist:
-  displayname: "<white>Cut Greenschist"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_greenschist.png
+    - blocks_expansion/cut_greenschist.png
+    custom_model_data: 1102
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 38
-    model: cut_greenschist
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_greenschist, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 114
+      model: cut_greenschist
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_greenschist
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Greenschist
 greenschist_pillar:
-  displayname: "<white>Greenschist Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/greenschist_pillar_top.png
-      - blocks_expansion/greenschist_pillar_side.png
+    - blocks_expansion/greenschist_pillar_top.png
+    - blocks_expansion/greenschist_pillar_side.png
+    custom_model_data: 1103
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 39
-    model: greenschist_pillar
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: greenschist_pillar, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 115
+      model: greenschist_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: greenschist_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Greenschist Pillar
 chiseled_greenschist:
-  displayname: "<white>Chiseled Greenschist"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/chiseled_greenschist_top.png
-      - blocks_expansion/chiseled_greenschist_side.png
+    - blocks_expansion/chiseled_greenschist_top.png
+    - blocks_expansion/chiseled_greenschist_side.png
+    custom_model_data: 1104
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 40
-    model: chiseled_greenschist
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_greenschist, probability: 1.0}        
-        
-#Limestone
-
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 116
+      model: chiseled_greenschist
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_greenschist
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Greenschist
 limestone:
-  displayname: "<white>Limestone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/limestone.png
+    - blocks_expansion/limestone.png
+    custom_model_data: 1105
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 41
-    model: limestone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: limestone, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 117
+      model: limestone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: limestone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Limestone
 limestone_bricks:
-  displayname: "<white>Limestone Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/limestone_bricks.png
+    - blocks_expansion/limestone_bricks.png
+    custom_model_data: 1106
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 42
-    model: limestone_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: limestone_bricks, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 118
+      model: limestone_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: limestone_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Limestone Bricks
 polished_limestone:
-  displayname: "<white>Polished Limestone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_limestone.png
+    - blocks_expansion/polished_limestone.png
+    custom_model_data: 1107
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 43
-    model: polished_limestone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_limestone, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 119
+      model: polished_limestone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_limestone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Limestone
 cut_limestone:
-  displayname: "<white>Cut Limestone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_limestone.png
+    - blocks_expansion/cut_limestone.png
+    custom_model_data: 1108
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 44
-    model: cut_limestone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_limestone, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 120
+      model: cut_limestone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_limestone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Limestone
 limestone_pillar:
-  displayname: "<white>Limestone Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/limestone_pillar_top.png
-      - blocks_expansion/limestone_pillar_side.png
+    - blocks_expansion/limestone_pillar_top.png
+    - blocks_expansion/limestone_pillar_side.png
+    custom_model_data: 1109
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 45
-    model: limestone_pillar
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: limestone_pillar, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 121
+      model: limestone_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: limestone_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Limestone Pillar
 chiseled_limestone:
-  displayname: "<white>Chiseled Limestone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/chiseled_limestone_top.png
-      - blocks_expansion/chiseled_limestone_side.png
+    - blocks_expansion/chiseled_limestone_top.png
+    - blocks_expansion/chiseled_limestone_side.png
+    custom_model_data: 1110
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 46
-    model: chiseled_limestone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_limestone, probability: 1.0}   
-
-#Seastone
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 122
+      model: chiseled_limestone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_limestone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Limestone
 seastone:
-  displayname: "<white>Seastone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/seastone.png
+    - blocks_expansion/seastone.png
+    custom_model_data: 1111
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 47
-    model: seastone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: seastone, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 123
+      model: seastone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: seastone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Seastone
 seastone_bricks:
-  displayname: "<white>Seastone Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/seastone_bricks.png
+    - blocks_expansion/seastone_bricks.png
+    custom_model_data: 1112
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 48
-    model: seastone_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: seastone_bricks, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 124
+      model: seastone_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: seastone_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Seastone Bricks
 polished_seastone:
-  displayname: "<white>Polished Seastone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_seastone.png
+    - blocks_expansion/polished_seastone.png
+    custom_model_data: 1113
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 49
-    model: polished_seastone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_seastone, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 175
+      model: polished_seastone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_seastone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Seastone
 cut_seastone:
-  displayname: "<white>Cut Seastone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_seastone.png
+    - blocks_expansion/cut_seastone.png
+    custom_model_data: 1114
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 50
-    model: cut_seastone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_seastone, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 151
+      model: cut_seastone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_seastone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Seastone
 seastone_pillar:
-  displayname: "<white>Seastone Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/seastone_pillar_top.png
-      - blocks_expansion/seastone_pillar_side.png
+    - blocks_expansion/seastone_pillar_top.png
+    - blocks_expansion/seastone_pillar_side.png
+    custom_model_data: 1115
   Mechanics:
-   noteblock:
-#CherSOSInyash MomPISOSent le4ak
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 51
-    model: seastone_pillar
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: seastone_pillar, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 152
+      model: seastone_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: seastone_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Seastone Pillar
 chiseled_seastone:
-  displayname: "<white>Chiseled Seastone"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/chiseled_seastone.png
+    - blocks_expansion/chiseled_seastone.png
+    custom_model_data: 1116
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 52
-    model: chiseled_seastone
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_seastone, probability: 1.0}   
-
-#Frosty
-
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 153
+      model: chiseled_seastone
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_seastone
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Seastone
 snow_bricks:
-  displayname: "<white>Snow_bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/snow_bricks.png
+    - blocks_expansion/snow_bricks.png
+    custom_model_data: 1117
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 53
-    model: snow_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: snow_bricks, probability: 1.0}      
-polished_packed_ice:
-  displayname: "<white>Polished Packed Ice"
-  material: PAPER
-  Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
-    textures:
-      - blocks_expansion/polished_packed_ice.png
-  Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 54
-    model: polished_packed_ice
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_packed_ice, probability: 1.0}
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 154
+      model: snow_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: snow_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Snow_bricks
 chiseled_packed_ice:
-  displayname: "<white>Chiseled Packed Ice"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/chiseled_packed_ice.png
+    - blocks_expansion/chiseled_packed_ice.png
+    custom_model_data: 1118
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 55
-    model: chiseled_packed_ice
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: chiseled_packed_ice, probability: 1.0}      
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 156
+      model: chiseled_packed_ice
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: chiseled_packed_ice
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Chiseled Packed Ice
 cut_packed_ice:
-  displayname: "<white>Cut Packed Ice"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/cut_packed_ice.png
+    - blocks_expansion/cut_packed_ice.png
+    custom_model_data: 1119
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 56
-    model: cut_packed_ice
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: cut_packed_ice, probability: 1.0}    
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 157
+      model: cut_packed_ice
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: cut_packed_ice
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Cut Packed Ice
 packed_ice_pillar:
-  displayname: "<white>Packed Ice Pillar"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_column"
+    parent_model: block/cube_column
     textures:
-      - blocks_expansion/packed_ice_pillar_top.png
-      - blocks_expansion/packed_ice_pillar_side.png
+    - blocks_expansion/packed_ice_pillar_top.png
+    - blocks_expansion/packed_ice_pillar_side.png
+    custom_model_data: 1120
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 57
-    model: packed_ice_pillar
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: packed_ice_pillar, probability: 1.0}    
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 158
+      model: packed_ice_pillar
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: packed_ice_pillar
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Packed Ice Pillar
 polished_packed_ice:
-  displayname: "<white>Polished Packed Ice"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/polished_packed_ice.png
+    - blocks_expansion/polished_packed_ice.png
+    custom_model_data: 1121
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 58
-    model: polished_packed_ice
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: polished_packed_ice, probability: 1.0}       
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 159
+      model: polished_packed_ice
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: polished_packed_ice
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Polished Packed Ice
 packed_ice_bricks:
-  displayname: "<white>Packed Ice Bricks"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "block/cube_all"
+    parent_model: block/cube_all
     textures:
-      - blocks_expansion/packed_ice_bricks.png
+    - blocks_expansion/packed_ice_bricks.png
+    custom_model_data: 1122
   Mechanics:
-   noteblock:
-    block_sounds:
-      break_sound: block.stone.break
-      place_sound: block.stone.place
-    custom_variation: 59
-    model: packed_ice_bricks
-    hardness: 6
-    drop:
-      silktouch: false 
-      minimal_type: WOOD
-      best_tools:
-       - PICKAXE
-      loots:
-        - {oraxen_item: packed_ice_bricks, probability: 1.0}                
+    custom_block:
+      block_sounds:
+        break_sound: block.stone.break
+        place_sound: block.stone.place
+      custom_variation: 160
+      model: packed_ice_bricks
+      hardness: 6
+      drop:
+        silktouch: false
+        minimal_type: WOOD
+        loots:
+        - probability: 1.0
+          nexo_item: packed_ice_bricks
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <white>Packed Ice Bricks

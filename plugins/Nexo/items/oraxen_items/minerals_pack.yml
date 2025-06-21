@@ -6,1154 +6,1150 @@
 # Color codes: https://docs.adventure.kyori.net/minimessage.html#format
 
 ruby_ore:
-  displayname: '<#FFFFFF>Ruby Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/ruby_ore
+    - minerals_pack/ruby_ore
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 60
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 161
       model: ruby_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: ruby
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: ruby
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Ruby Ore
 deepslate_ruby_ore:
-  displayname: '<#FFFFFF>Deepslate Ruby Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_ruby_ore
+    - minerals_pack/deepslate_ruby_ore
+    custom_model_data: 1123
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 61
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 162
       model: deepslate_ruby_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: ruby
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: ruby
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Ruby Ore
 raw_ruby_block:
-  displayname: '<#FFFFFF>Block of Raw Ruby'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_ruby_block
+    - minerals_pack/raw_ruby_block
+    custom_model_data: 1124
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 62
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 163
       model: raw_ruby_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_ruby_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_ruby_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Ruby
 jade_ore:
-  displayname: '<#FFFFFF>Jade Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/jade_ore
+    - minerals_pack/jade_ore
+    custom_model_data: 1125
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 63
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 164
       model: jade_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_jade
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_jade
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Jade Ore
 deepslate_jade_ore:
-  displayname: '<#FFFFFF>Deepslate Jade Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_jade_ore
+    - minerals_pack/deepslate_jade_ore
+    custom_model_data: 1126
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 64
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 165
       model: deepslate_jade_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_jade
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_jade
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Jade Ore
 raw_jade_block:
-  displayname: '<#FFFFFF>Block of Raw Jade'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_jade_block
+    - minerals_pack/raw_jade_block
+    custom_model_data: 1127
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 65
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 166
       model: raw_jade_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_jade_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_jade_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Jade
 iridium_ore:
-  displayname: '<#FFFFFF>Iridium Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/iridium_ore
+    - minerals_pack/iridium_ore
+    custom_model_data: 1128
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 66
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 167
       model: iridium_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_iridium
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_iridium
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Iridium Ore
 deepslate_iridium_ore:
-  displayname: '<#FFFFFF>Deepslate Iridium Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_iridium_ore
+    - minerals_pack/deepslate_iridium_ore
+    custom_model_data: 1129
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 67
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 168
       model: deepslate_iridium_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_iridium
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_iridium
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Iridium Ore
 raw_iridium_block:
-  displayname: '<#FFFFFF>Block of Raw Iridium'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_iridium_block
+    - minerals_pack/raw_iridium_block
+    custom_model_data: 1130
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 68
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 169
       model: raw_iridium_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_iridium_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_iridium_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Iridium
 mythril_ore:
-  displayname: '<#FFFFFF>Mythril Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/mythril_ore
+    - minerals_pack/mythril_ore
+    custom_model_data: 1131
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 69
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 170
       model: mythril_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_mythril
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_mythril
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Mythril Ore
 deepslate_mythril_ore:
-  displayname: '<#FFFFFF>Deepslate Mythril Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_mythril_ore
+    - minerals_pack/deepslate_mythril_ore
+    custom_model_data: 1132
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 70
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 171
       model: deepslate_mythril_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_mythril
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_mythril
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Mythril Ore
 raw_mythril_block:
-  displayname: '<#FFFFFF>Block of Raw Mythril'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_mythril_block
+    - minerals_pack/raw_mythril_block
+    custom_model_data: 1133
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 71
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 172
       model: raw_mythril_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_mythril_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_mythril_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Mythril
 amber_ore:
-  displayname: '<#FFFFFF>Amber Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/amber_ore
+    - minerals_pack/amber_ore
+    custom_model_data: 1134
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 72
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 173
       model: amber_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: amber
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: amber
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Amber Ore
 deepslate_amber_ore:
-  displayname: '<#FFFFFF>Deepslate Amber Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_amber_ore
+    - minerals_pack/deepslate_amber_ore
+    custom_model_data: 1135
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 73
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 174
       model: deepslate_amber_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: amber
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: amber
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Amber Ore
 raw_amber_block:
-  displayname: '<#FFFFFF>Block of Raw Amber'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_amber_block
+    - minerals_pack/raw_amber_block
+    custom_model_data: 1136
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 74
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 225
       model: raw_amber_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_amber_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_amber_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Amber
 amethyst_ore:
-  displayname: '<#FFFFFF>Amethyst Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/amethyst_ore
+    - minerals_pack/amethyst_ore
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 75
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 201
       model: amethyst_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: amethyst
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: amethyst
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Amethyst Ore
 deepslate_amethyst_ore:
-  displayname: '<#FFFFFF>Deepslate Amethyst Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_amethyst_ore
+    - minerals_pack/deepslate_amethyst_ore
+    custom_model_data: 1137
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 76
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 202
       model: deepslate_amethyst_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: amethyst
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: amethyst
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Amethyst Ore
 raw_amethyst_block:
-  displayname: '<#FFFFFF>Block of Raw Amethyst'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_amethyst_block
+    - minerals_pack/raw_amethyst_block
+    custom_model_data: 1138
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 77
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 203
       model: raw_amethyst_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_amethyst_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_amethyst_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Amethyst
 silver_ore:
-  displayname: '<#FFFFFF>Silver Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/silver_ore
+    - minerals_pack/silver_ore
+    custom_model_data: 1139
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 78
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 204
       model: silver_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_silver
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_silver
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Silver Ore
 deepslate_silver_ore:
-  displayname: '<#FFFFFF>Deepslate Silver Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_silver_ore
+    - minerals_pack/deepslate_silver_ore
+    custom_model_data: 1140
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 79
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 205
       model: deepslate_silver_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_silver
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_silver
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Silver Ore
 raw_silver_block:
-  displayname: '<#FFFFFF>Block of Raw Silver'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_silver_block
+    - minerals_pack/raw_silver_block
+    custom_model_data: 1141
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 80
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 206
       model: raw_silver_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_silver_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_silver_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Silver
 malachite_ore:
-  displayname: '<#FFFFFF>Malachite Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/malachite_ore
+    - minerals_pack/malachite_ore
+    custom_model_data: 1142
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 81
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 207
       model: malachite_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: malachite
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: malachite
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Malachite Ore
 deepslate_malachite_ore:
-  displayname: '<#FFFFFF>Deepslate Malachite Ore'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/deepslate_malachite_ore
+    - minerals_pack/deepslate_malachite_ore
+    custom_model_data: 1143
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 82
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 208
       model: deepslate_malachite_ore
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: malachite
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: malachite
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Deepslate Malachite Ore
 raw_malachite_block:
-  displayname: '<#FFFFFF>Block of Raw Malachite'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/raw_malachite_block
+    - minerals_pack/raw_malachite_block
+    custom_model_data: 1144
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 83
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 209
       model: raw_malachite_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: raw_malachite_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: raw_malachite_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Block of Raw Malachite
 ruby_block:
-  displayname: '<#FFFFFF>Ruby Block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/ruby_block
+    - minerals_pack/ruby_block
+    custom_model_data: 1145
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 84
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 210
       model: ruby_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: ruby_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: ruby_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Ruby Block
 amethyst_block:
-  displayname: '<#FFFFFF>Amethyst Block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/amethyst_block
+    - minerals_pack/amethyst_block
+    custom_model_data: 1146
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 85
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 211
       model: amethyst_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: amethyst_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: amethyst_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Amethyst Block
 amber_block:
-  displayname: '<#FFFFFF>Amber block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/amber_block
+    - minerals_pack/amber_block
+    custom_model_data: 1147
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 86
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 212
       model: amber_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: amber_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: amber_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Amber block
 mythril_block:
-  displayname: '<#FFFFFF>Mythril Block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/mythril_block
+    - minerals_pack/mythril_block
+    custom_model_data: 1148
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 87
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 213
       model: mythril_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: mythril_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: mythril_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Mythril Block
 malachite_block:
-  displayname: '<#FFFFFF>Malachite Block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/malachite_block
+    - minerals_pack/malachite_block
+    custom_model_data: 1149
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 88
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 214
       model: malachite_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: malachite_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: malachite_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Malachite Block
 silver_block:
-  displayname: '<#FFFFFF>Silver Block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/silver_block
+    - minerals_pack/silver_block
+    custom_model_data: 1150
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 89
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 215
       model: silver_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: silver_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: silver_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Silver Block
 jade_block:
-  displayname: '<#FFFFFF>Jade Block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/jade_block
+    - minerals_pack/jade_block
+    custom_model_data: 1151
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 90
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 216
       model: jade_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: jade_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: jade_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Jade Block
 iridium_block:
-  displayname: '<#FFFFFF>Iridium Block'
   material: PAPER
   Pack:
-    generate_model: true
     parent_model: block/cube_all
     textures:
-      - minerals_pack/iridium_block
+    - minerals_pack/iridium_block
+    custom_model_data: 1152
   Mechanics:
-    noteblock:
+    custom_block:
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
-        hit_sound: block.stone.hit     # Custom sound as defined in Oraxen/sound.yml
-        step_sound: block.stone.step   # Requires a sound-file in the Oraxen/pack-folder aswell
+        hit_sound: block.stone.hit
+        step_sound: block.stone.step
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
-      custom_variation: 91
+        volume: 0.8
+        pitch: 0.8
+      custom_variation: 217
       model: iridium_block
       hardness: 7
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        best_tools:
-          - PICKAXE
         loots:
-          - oraxen_item: iridium_block
-            probability: 1.0
+        - probability: 1.0
+          nexo_item: iridium_block
+        best_tool: PICKAXE
+      type: NOTEBLOCK
+  itemname: <#FFFFFF>Iridium Block
 ruby:
-  displayname: "<#FFFFFF>Ruby"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/ruby.png # .png extension is not mandatory
+    - minerals_pack/ruby.png
+  itemname: <#FFFFFF>Ruby
 amber:
-  displayname: "<#FFFFFF>Amber"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/amber_shard.png # .png extension is not mandatory
+    - minerals_pack/amber_shard.png
+    custom_model_data: 1153
+  itemname: <#FFFFFF>Amber
 malachite:
-  displayname: "<#FFFFFF>Malachite"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/malachite.png # .png extension is not mandatory
+    - minerals_pack/malachite.png
+    custom_model_data: 1154
+  itemname: <#FFFFFF>Malachite
 raw_silver:
-  displayname: "<#FFFFFF>Raw Silver"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/silver.png # .png extension is not mandatory
+    - minerals_pack/silver.png
+    custom_model_data: 1155
+  itemname: <#FFFFFF>Raw Silver
 raw_jade:
-  displayname: "<#FFFFFF>Raw Jade"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/raw_jade.png # .png extension is not mandatory
+    - minerals_pack/raw_jade.png
+    custom_model_data: 1156
+  itemname: <#FFFFFF>Raw Jade
 amethyst:
-  displayname: "<#FFFFFF>Amethyst"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/amethyst.png # .png extension is not mandatory
+    - minerals_pack/amethyst.png
+  itemname: <#FFFFFF>Amethyst
 raw_iridium:
-  displayname: "<#FFFFFF>Raw Iridium"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/iridium.png # .png extension is not mandatory
+    - minerals_pack/iridium.png
+    custom_model_data: 1157
+  itemname: <#FFFFFF>Raw Iridium
 raw_mythril:
-  displayname: "<#FFFFFF>Raw Mythril"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/raw_mythril.png # .png extension is not mandatory
+    - minerals_pack/raw_mythril.png
+    custom_model_data: 1158
+  itemname: <#FFFFFF>Raw Mythril
 silver_ingot:
-  displayname: "<#FFFFFF>Silver Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/silver_ingot.png # .png extension is not mandatory
+    - minerals_pack/silver_ingot.png
+    custom_model_data: 1159
+  itemname: <#FFFFFF>Silver Ingot
 iridium_ingot:
-  displayname: "<#FFFFFF>Iridium Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/iridium_ingot.png # .png extension is not mandatory
+    - minerals_pack/iridium_ingot.png
+    custom_model_data: 1160
+  itemname: <#FFFFFF>Iridium Ingot
 jade_ingot:
-  displayname: "<#FFFFFF>Jade Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/jade_ingot.png # .png extension is not mandatory
+    - minerals_pack/jade_ingot.png
+    custom_model_data: 1161
+  itemname: <#FFFFFF>Jade Ingot
 ruby_ingot:
-  displayname: "<#FFFFFF>Ruby Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/ruby_ingot.png # .png extension is not mandatory
+    - minerals_pack/ruby_ingot.png
+    custom_model_data: 1162
+  itemname: <#FFFFFF>Ruby Ingot
 amber_ingot:
-  displayname: "<#FFFFFF>Amber Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/amber_ingot.png # .png extension is not mandatory
+    - minerals_pack/amber_ingot.png
+    custom_model_data: 1163
+  itemname: <#FFFFFF>Amber Ingot
 amethyst_ingot:
-  displayname: "<#FFFFFF>Amethyst Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/amethyst_ingot.png # .png extension is not mandatory
+    - minerals_pack/amethyst_ingot.png
+    custom_model_data: 1164
+  itemname: <#FFFFFF>Amethyst Ingot
 mythril_ingot:
-  displayname: "<#FFFFFF>Mythril Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/mythril_ingot.png # .png extension is not mandatory
+    - minerals_pack/mythril_ingot.png
+    custom_model_data: 1165
+  itemname: <#FFFFFF>Mythril Ingot
 malachite_ingot:
-  displayname: "<#FFFFFF>Malachite Ingot"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/malachite_ingot.png # .png extension is not mandatory
+    - minerals_pack/malachite_ingot.png
+    custom_model_data: 1166
+  itemname: <#FFFFFF>Malachite Ingot
 silver_nugget:
-  displayname: "<#FFFFFF>Silver Nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/silver_nugget.png # .png extension is not mandatory
+    - minerals_pack/silver_nugget.png
+    custom_model_data: 1167
+  itemname: <#FFFFFF>Silver Nugget
 ruby_nugget:
-  displayname: "<#FFFFFF>Ruby Nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/ruby_nugget.png # .png extension is not mandatory
+    - minerals_pack/ruby_nugget.png
+    custom_model_data: 1168
+  itemname: <#FFFFFF>Ruby Nugget
 iridium_nugget:
-  displayname: "<#FFFFFF>Iridium Nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/iridium_nugget.png # .png extension is not mandatory
+    - minerals_pack/iridium_nugget.png
+    custom_model_data: 1169
+  itemname: <#FFFFFF>Iridium Nugget
 jade_nugget:
-  displayname: "<#FFFFFF>Jade Nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/jade_nugget.png # .png extension is not mandatory
+    - minerals_pack/jade_nugget.png
+    custom_model_data: 1170
+  itemname: <#FFFFFF>Jade Nugget
 amber_nugget:
-  displayname: "<#FFFFFF>Amber Nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/amber_nugget.png # .png extension is not mandatory
+    - minerals_pack/amber_nugget.png
+    custom_model_data: 1171
+  itemname: <#FFFFFF>Amber Nugget
 amethyst_nugget:
-  displayname: "<#FFFFFF>Amethyst Nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/amethyst_nugget.png # .png extension is not mandatory
+    - minerals_pack/amethyst_nugget.png
+    custom_model_data: 1172
+  itemname: <#FFFFFF>Amethyst Nugget
 malachite_nugget:
-  displayname: "<#FFFFFF>Malachite_nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/malachite_nugget.png # .png extension is not mandatory
+    - minerals_pack/malachite_nugget.png
+    custom_model_data: 1173
+  itemname: <#FFFFFF>Malachite_nugget
 mythril_nugget:
-  displayname: "<#FFFFFF>Mythril Nugget"
   material: PAPER
   Pack:
-    generate_model: true
-    parent_model: "item/generated"
+    parent_model: item/generated
     textures:
-      - minerals_pack/mythril_nugget.png # .png extension is not mandatory
+    - minerals_pack/mythril_nugget.png
+    custom_model_data: 1174
+  itemname: <#FFFFFF>Mythril Nugget
