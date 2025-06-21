@@ -1,0 +1,31 @@
+# ServerOptimizer Configuration
+
+# Cleanup settings
+cleanup:
+  # Interval in minutes between item cleanups
+  interval: 3
+  # Announcement times in seconds before cleanup
+  announcements:
+    - 300  # 5 minutes
+    - 60   # 1 minute
+    - 30   # 30 seconds
+    - 5    # 5 seconds
+    - 4    # 4 seconds
+    - 3    # 3 seconds
+    - 2    # 2 seconds
+    - 1    # 1 second
+
+# Memory management settings
+memory:
+  # Target memory usage in MB (lowered to 500MB)
+  target: 500
+  # Memory check interval in seconds
+  check-interval: 15
+
+# Chunk management settings
+chunk-management:
+  enabled: true
+  # Maximum chunks to keep loaded per player (reduced)
+  chunks-per-player: 64
+  # Unload chunks after this many seconds of inactivity (reduced)
+  unload-after: 120

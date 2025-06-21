@@ -1,0 +1,5 @@
+players-data:
+  uuid:
+    password: password
+    ip: ip
+    login-status: status

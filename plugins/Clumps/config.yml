@@ -1,0 +1,55 @@
+# XP Clumps Plugin Configuration
+
+# The radius within which XP orbs will merge (in blocks)
+merge-radius: 2.0
+
+# Minimum XP amount required in an orb for it to be merged with others
+min-xp-to-merge: 5
+
+# How often (in seconds) the plugin checks and merges XP orbs in each world
+merge-interval-seconds: 10
+
+# The radius within which XP orbs will be instantly collected by players
+instant-collect-radius: 1.5
+
+# Enable or disable the instant collection of XP orbs by players within the defined radius
+enable-instant-collect: true
+
+# Enable or disable the merging of XP orbs across the server
+enable-merging: true
+
+# The XP boost multiplier for players collecting XP near merged XP orbs (percentage as a multiplier)
+xp-boost-multiplier: 1.1  # 10% XP boost
+
+# Enable or disable the XP boost feature for players near merging XP orbs
+enable-xp-boost: true
+
+# Enable or disable particle effects when XP orbs merge (visual animations)
+enable-merge-animations: true
+
+# Prevent duplication of XP orbs (to avoid excessive orb spawning)
+prevent-orb-duplication: true
+
+# World-specific settings (if you want different settings for different worlds)
+world-settings:
+  # Example of how to configure world-specific settings for merging XP orbs
+  # These settings will override the global settings for specific worlds
+  overworld:
+    merge-radius: 2.0
+    min-xp-to-merge: 5
+    merge-interval-seconds: 10
+    enable-instant-collect: true
+    enable-merging: true
+    xp-boost-multiplier: 1.1
+    enable-xp-boost: true
+    enable-merge-animations: true
+  nether:
+    merge-radius: 3.0  # Different radius for the Nether
+    min-xp-to-merge: 10
+    merge-interval-seconds: 15  # Longer interval for Nether
+    enable-instant-collect: false  # Disabled instant collect in the Nether
+    enable-merging: true
+    xp-boost-multiplier: 1.2  # Higher XP boost in the Nether
+    enable-xp-boost: true
+    enable-merge-animations: false  # Disable animations in the Nether
+
