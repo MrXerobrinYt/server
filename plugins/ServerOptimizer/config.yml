@@ -3,17 +3,17 @@
 # Cleanup settings
 cleanup:
   # Interval in minutes between item cleanups
-  interval: 3
+  interval: 25
   # Announcement times in seconds before cleanup
   announcements:
-    - 300  # 5 minutes
-    - 60   # 1 minute
-    - 30   # 30 seconds
-    - 5    # 5 seconds
-    - 4    # 4 seconds
-    - 3    # 3 seconds
-    - 2    # 2 seconds
-    - 1    # 1 second
+  - 300
+  - 60
+  - 30
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
 
 # Memory management settings
 memory:
