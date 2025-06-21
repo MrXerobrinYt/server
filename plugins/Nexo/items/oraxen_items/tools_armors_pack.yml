@@ -1,0 +1,654 @@
+# Material list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# EntityType list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+# Attribute list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
+# Potion effects list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+# Random UUID generator: https://www.uuidgenerator.net/
+# Color codes: https://docs.adventure.kyori.net/minimessage.html#format
+
+amethyst_sword:
+  displayname: '<#FFFFFF>Amethyst Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amethyst_sword
+amethyst_shovel:
+  displayname: '<#FFFFFF>Amethyst Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amethyst_shovel
+amethyst_pickaxe:
+  displayname: '<#FFFFFF>Amethyst Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amethyst_pickaxe
+amethyst_axe:
+  displayname: '<#FFFFFF>Amethyst Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amethyst_axe
+amethyst_hoe:
+  displayname: '<#FFFFFF>Amethyst Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amethyst_hoe
+      
+amber_sword:
+  displayname: '<#FFFFFF>Amber Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amber_sword
+amber_shovel:
+  displayname: '<#FFFFFF>Amber Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amber_shovel
+amber_pickaxe:
+  displayname: '<#FFFFFF>Amber Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amber_pickaxe
+amber_axe:
+  displayname: '<#FFFFFF>Amber Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amber_axe
+amber_hoe:
+  displayname: '<#FFFFFF>Amber Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/amber_hoe
+      
+malachite_sword:
+  displayname: '<#FFFFFF>Malachite Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/malachite_sword
+malachite_shovel:
+  displayname: '<#FFFFFF>Malachite Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/malachite_shovel
+malachite_pickaxe:
+  displayname: '<#FFFFFF>Malachite Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/malachite_pickaxe
+malachite_axe:
+  displayname: '<#FFFFFF>Malachite Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/malachite_axe
+malachite_hoe:
+  displayname: '<#FFFFFF>Malachite Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/malachite_hoe
+      
+ruby_sword:
+  displayname: '<#FFFFFF>Ruby Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/ruby_sword
+ruby_shovel:
+  displayname: '<#FFFFFF>Ruby Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/ruby_shovel
+ruby_pickaxe:
+  displayname: '<#FFFFFF>Ruby Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/ruby_pickaxe
+ruby_axe:
+  displayname: '<#FFFFFF>Ruby Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/ruby_axe
+ruby_hoe:
+  displayname: '<#FFFFFF>Ruby Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/ruby_hoe
+      
+mythril_sword:
+  displayname: '<#FFFFFF>Mythril Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/mythril_sword
+mythril_shovel:
+  displayname: '<#FFFFFF>Mythril Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/mythril_shovel
+mythril_pickaxe:
+  displayname: '<#FFFFFF>Mythril Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/mythril_pickaxe
+mythril_axe:
+  displayname: '<#FFFFFF>Mythril Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/mythril_axe
+mythril_hoe:
+  displayname: '<#FFFFFF>Mythril Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/mythril_hoe
+      
+silver_sword:
+  displayname: '<#FFFFFF>Silver Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/silver_sword
+silver_shovel:
+  displayname: '<#FFFFFF>Silver Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/silver_shovel
+silver_pickaxe:
+  displayname: '<#FFFFFF>Silver Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/silver_pickaxe
+silver_axe:
+  displayname: '<#FFFFFF>Silver Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/silver_axe
+silver_hoe:
+  displayname: '<#FFFFFF>Silver Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/silver_hoe
+      
+jade_sword:
+  displayname: '<#FFFFFF>Jade Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/jade_sword
+jade_shovel:
+  displayname: '<#FFFFFF>Jade Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/jade_shovel
+jade_pickaxe:
+  displayname: '<#FFFFFF>Jade Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/jade_pickaxe
+jade_axe:
+  displayname: '<#FFFFFF>Jade Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/jade_axe
+jade_hoe:
+  displayname: '<#FFFFFF>Jade Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/jade_hoe
+      
+iridium_sword:
+  displayname: '<#FFFFFF>Iridium Sword'
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/iridium_sword
+iridium_shovel:
+  displayname: '<#FFFFFF>Iridium Shovel'
+  material: IRON_SHOVEL
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/iridium_shovel
+iridium_pickaxe:
+  displayname: '<#FFFFFF>Iridium Pickaxe'
+  material: IRON_PICKAXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/iridium_pickaxe
+iridium_axe:
+  displayname: '<#FFFFFF>Iridium Axe'
+  material: IRON_AXE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/iridium_axe
+iridium_hoe:
+  displayname: '<#FFFFFF>Iridium Hoe'
+  material: IRON_HOE
+  Pack:
+    generate_model: true
+    parent_model: "item/handheld"
+    textures:
+      - tools_armors_pack/iridium_hoe
+malachite_helmet:
+  displayname: '<#FFFFFF>Malachite Helmet'
+  material: LEATHER_HELMET
+  color: 50, 199, 159
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/malachite_helmet
+      - tools_armors_pack/malachite_helmet
+malachite_chestplate:
+  displayname: '<#FFFFFF>Malachite Chestplate'
+  material: LEATHER_CHESTPLATE
+  color: 50, 199, 159
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/malachite_chestplate
+      - tools_armors_pack/malachite_chestplate
+malachite_leggings:
+  displayname: '<#FFFFFF>Malachite Leggings'
+  material: LEATHER_LEGGINGS
+  color: 50, 199, 159
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/malachite_leggings
+      - tools_armors_pack/malachite_leggings
+malachite_boots:
+  displayname: '<#FFFFFF>Malachite Boots'
+  material: LEATHER_BOOTS
+  color: 50, 199, 159
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/malachite_boots
+      - tools_armors_pack/malachite_boots
+iridium_helmet:
+  displayname: '<#FFFFFF>Iridium Helmet'
+  material: LEATHER_HELMET
+  color: 148, 56, 214
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/iridium_helmet
+      - tools_armors_pack/iridium_helmet
+iridium_chestplate:
+  displayname: '<#FFFFFF>Iridium Chestplate'
+  material: LEATHER_CHESTPLATE
+  color: 148, 56, 214
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/iridium_chestplate
+      - tools_armors_pack/iridium_chestplate
+iridium_leggings:
+  displayname: '<#FFFFFF>Iridium Leggings'
+  material: LEATHER_LEGGINGS
+  color: 148, 56, 214
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/iridium_leggings
+      - tools_armors_pack/iridium_leggings
+iridium_boots:
+  displayname: '<#FFFFFF>Iridium Boots'
+  material: LEATHER_BOOTS
+  color: 148, 56, 214
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/iridium_boots
+      - tools_armors_pack/iridium_boots
+amber_helmet:
+  displayname: '<#FFFFFF>Amber Helmet'
+  material: LEATHER_HELMET
+  color: 232, 164, 56
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amber_helmet
+      - tools_armors_pack/amber_helmet
+amber_chestplate:
+  displayname: '<#FFFFFF>Amber Chestplate'
+  material: LEATHER_CHESTPLATE
+  color: 232, 164, 56
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amber_chestplate
+      - tools_armors_pack/amber_chestplate
+amber_leggings:
+  displayname: '<#FFFFFF>Amber Leggings'
+  material: LEATHER_LEGGINGS
+  color: 232, 164, 56
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amber_leggings
+      - tools_armors_pack/amber_leggings
+amber_boots:
+  displayname: '<#FFFFFF>Amber Boots'
+  material: LEATHER_BOOTS
+  color: 232, 164, 56
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amber_boots
+      - tools_armors_pack/amber_boots
+amethyst_helmet:
+  displayname: '<#FFFFFF>Amethyst Helmet'
+  material: LEATHER_HELMET
+  color: 201, 71, 188
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amethyst_helmet
+      - tools_armors_pack/amethyst_helmet
+amethyst_chestplate:
+  displayname: '<#FFFFFF>Amethyst Chestplate'
+  material: LEATHER_CHESTPLATE
+  color: 201, 71, 188
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amethyst_chestplate
+      - tools_armors_pack/amethyst_chestplate
+amethyst_leggings:
+  displayname: '<#FFFFFF>Amethyst Leggings'
+  material: LEATHER_LEGGINGS
+  color: 201, 71, 188
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amethyst_leggings
+      - tools_armors_pack/amethyst_leggings
+amethyst_boots:
+  displayname: '<#FFFFFF>Amethyst Boots'
+  material: LEATHER_BOOTS
+  color: 201, 71, 188
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/amethyst_boots
+      - tools_armors_pack/amethyst_boots
+mythril_helmet:
+  displayname: '<#FFFFFF>Mythril Helmet'
+  material: LEATHER_HELMET
+  color: 38, 42, 171
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/mythril_helmet
+      - tools_armors_pack/mythril_helmet
+mythril_chestplate:
+  displayname: '<#FFFFFF>Mythril Chestplate'
+  material: LEATHER_CHESTPLATE
+  color: 38, 42, 171
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/mythril_chestplate
+      - tools_armors_pack/mythril_chestplate
+mythril_leggings:
+  displayname: '<#FFFFFF>Mythril Leggings'
+  material: LEATHER_LEGGINGS
+  color: 38, 42, 171
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/mythril_leggings
+      - tools_armors_pack/mythril_leggings
+mythril_boots:
+  displayname: '<#FFFFFF>Mythril Boots'
+  material: LEATHER_BOOTS
+  color: 38, 42, 171
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/mythril_boots
+      - tools_armors_pack/mythril_boots
+silver_helmet:
+  displayname: '<#FFFFFF>Silver Helmet'
+  material: LEATHER_HELMET
+  color: 157, 221, 224
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/silver_helmet
+      - tools_armors_pack/silver_helmet
+silver_chestplate:
+  displayname: '<#FFFFFF>Silver Chestplate'
+  material: LEATHER_CHESTPLATE
+  color: 157, 221, 224
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/silver_chestplate
+      - tools_armors_pack/silver_chestplate
+silver_leggings:
+  displayname: '<#FFFFFF>Silver Leggings'
+  material: LEATHER_LEGGINGS
+  color: 157, 221, 224
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/silver_leggings
+      - tools_armors_pack/silver_leggings
+silver_boots:
+  displayname: '<#FFFFFF>Silver Boots'
+  material: LEATHER_BOOTS
+  color: 157, 221, 224
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/silver_boots
+      - tools_armors_pack/silver_boots
+jade_helmet:
+  displayname: '<#FFFFFF>Jade Helmet'
+  material: LEATHER_HELMET
+  color: 51, 209, 46
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/jade_helmet
+      - tools_armors_pack/jade_helmet
+jade_chestplate:
+  displayname: '<#FFFFFF>Jade Chestplate'
+  material: LEATHER_CHESTPLATE
+  color: 51, 209, 46
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/jade_chestplate
+      - tools_armors_pack/jade_chestplate
+jade_leggings:
+  displayname: '<#FFFFFF>Jade Leggings'
+  material: LEATHER_LEGGINGS
+  color: 51, 209, 46
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/jade_leggings
+      - tools_armors_pack/jade_leggings
+jade_boots:
+  displayname: '<#FFFFFF>Jade Boots'
+  material: LEATHER_BOOTS
+  color: 51, 209, 46
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - tools_armors_pack/jade_boots
+      - tools_armors_pack/jade_boots
+ruby_helmet:
+  displayname: "<#FFFFFF>Ruby Helmet"
+  material: LEATHER_HELMET
+  color: 252, 3, 30
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures: # duplicate because we use the overlay of the leather armor
+      - tools_armors_pack/ruby_helmet
+      - tools_armors_pack/ruby_helmet
+ruby_chestplate:
+  displayname: "<#FFFFFF>Ruby Chestplate"
+  material: LEATHER_CHESTPLATE
+  color: 252, 3, 30
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures: # duplicate because we use the overlay of the leather armor
+      - tools_armors_pack/ruby_chestplate
+      - tools_armors_pack/ruby_chestplate
+ruby_leggings:
+  displayname: "<#FFFFFF>Ruby Leggings"
+  material: LEATHER_LEGGINGS
+  color: 252, 3, 30
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures: # duplicate because we use the overlay of the leather armor
+      - tools_armors_pack/ruby_leggings
+      - tools_armors_pack/ruby_leggings
+ruby_boots:
+  displayname: "<#FFFFFF>Ruby Boots"
+  material: LEATHER_BOOTS
+  color: 252, 3, 30
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures: # duplicate because we use the overlay of the leather armor
+      - tools_armors_pack/ruby_boots
+      - tools_armors_pack/ruby_boots
