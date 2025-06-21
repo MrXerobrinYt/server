@@ -1,0 +1,164 @@
+table:
+  itemname: <gray>Table
+  material: PAPER
+  Mechanics:
+    furniture:
+      type: ITEM_FRAME # Valid types are ITEM_FRAME, GLOW_ITEM_FRAME & DISPLAY_ENTITY if server is 1.19.4>
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      barrier: true
+      light: 5
+      drop:
+        silktouch: false
+        loots:
+        - oraxen_item: table
+          probability: 1.0
+  Pack:
+    generate_model: false
+    model: default/table
+
+cart:
+  itemname: <gray>Cart
+  material: PAPER
+  Mechanics:
+    furniture:
+      type: DISPLAY_ENTITY
+      hitbox:
+        width: 1.0
+        height: 1.0
+      display_entity_properties:
+        display_transform: FIXED
+      barrier: true
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      drop:
+        silktouch: false
+        loots:
+        - oraxen_item: cart
+          probability: 1.0
+  Pack:
+    generate_model: false
+    model: default/cart
+
+chair:
+  itemname: <gray>Chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      type: DISPLAY_ENTITY
+      hitbox:
+        width: 1.0
+        height: 2.0
+      display_entity_properties:
+        display_transform: FIXED
+      barrier: true
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      seat:
+        height: 0
+      drop:
+        silktouch: false
+        loots:
+        - oraxen_item: chair
+          probability: 1.0
+  Pack:
+    generate_model: false
+    model: default/chair
+
+coach:
+  itemname: <gray>Coach
+  material: PAPER
+  Mechanics:
+    furniture:
+      type: DISPLAY_ENTITY
+      display_entity_properties:
+        display_transform: FIXED
+      barrier: true
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      barriers:
+      - origin
+      - z: 1
+      - z: 2
+      - x: 1
+      - x: 1
+        z: 1
+      - x: 1
+        z: 2
+      drop:
+        silktouch: false
+        loots:
+        - oraxen_item: coach
+          probability: 1.0
+  Pack:
+    generate_model: false
+    model: default/coach
+
+shelf:
+  itemname: <gray>Shelf
+  material: PAPER
+  Mechanics:
+    furniture:
+      type: ITEM_FRAME
+      limited_placing:
+        roof: false
+        floor: false
+        wall: true
+        type: DENY
+        block_types: []
+        block_tags: []
+        oraxen_blocks: []
+      barrier: false
+      drop:
+        silktouch: false
+        loots:
+        - oraxen_item: shelf
+          probability: 1.0
+  Pack:
+    generate_model: false
+    model: default/shelf
+
+turntable:
+  itemname: <gray>Turntable
+  material: PAPER
+  Mechanics:
+    furniture:
+      type: DISPLAY_ENTITY
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      barrier: true
+      light: 5
+      drop:
+        silktouch: false
+        loots:
+        - oraxen_item: turntable
+          probability: 1.0
+      display_entity_properties:
+        scale:
+          x: 0.75
+          y: 0.75
+          z: 0.75
+      jukebox:
+        active_stage: turtable_active_stage
+        volume: 1.0
+        pitch: 1.0
+  Pack:
+    generate_model: false
+    model: default/turntable_closed
+
+turtable_active_stage:
+  material: PAPER
+  excludeFromInventory: true
+  Pack:
+    generate_model: false
+    model: default/turntable_opened
