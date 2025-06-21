@@ -18,7 +18,7 @@ cleanup:
 # Memory management settings
 memory:
   # Target memory usage in MB (lowered to 500MB)
-  target: 1524
+  target: 2048
   # Memory check interval in seconds
   check-interval: 15
 
