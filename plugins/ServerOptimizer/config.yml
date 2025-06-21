@@ -3,7 +3,7 @@
 # Cleanup settings
 cleanup:
   # Interval in minutes between item cleanups
-  interval: 25
+  interval: 30
   # Announcement times in seconds before cleanup
   announcements:
   - 300
@@ -18,7 +18,7 @@ cleanup:
 # Memory management settings
 memory:
   # Target memory usage in MB (lowered to 500MB)
-  target: 500
+  target: 1524
   # Memory check interval in seconds
   check-interval: 15
 
