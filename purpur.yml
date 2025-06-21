@@ -252,6 +252,7 @@ world-settings:
           explosion-effect: BLOCK
         cramming-amount: 0
       farmland:
+        bypass-mob-griefing: false
         mob-griefing-override: default
         gets-moist-from-below: false
         use-alpha-farmland: false
@@ -278,6 +279,7 @@ world-settings:
       magma-block:
         damage-when-sneaking: false
       powder_snow:
+        bypass-mob-griefing: false
         mob-griefing-override: default
       powered-rail:
         activation-range: 8
@@ -304,6 +306,7 @@ world-settings:
       stonecutter:
         damage: 0.0
       turtle_egg:
+        bypass-mob-griefing: false
         break-from-exp-orbs: false
         break-from-items: false
         break-from-minecarts: false
@@ -801,6 +804,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       creeper:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -870,6 +874,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       ender_dragon:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -881,6 +886,7 @@ world-settings:
         takes-damage-from-water: false
         can-ride-vehicles: false
       enderman:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -906,6 +912,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       evoker:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -916,6 +923,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       fox:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1180,6 +1188,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       piglin:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1202,6 +1211,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       pillager:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1231,6 +1241,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       rabbit:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1244,6 +1255,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       ravager:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: false
         controllable: true
@@ -1281,6 +1293,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       sheep:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1308,6 +1321,7 @@ world-settings:
         change-color-with-dye: false
         always-drop-exp: false
       silverfish:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1357,6 +1371,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       snow_golem:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1476,6 +1491,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       villager:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1547,6 +1563,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       wither:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1594,6 +1611,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       zombie:
+        bypass-mob-griefing: false
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1670,6 +1688,9 @@ world-settings:
       entity:
         shared-random: true
     gameplay-mechanics:
+      entities-pick-up-loot-bypass-mob-griefing: false
+      fireballs-bypass-mob-griefing: false
+      projectiles-bypass-mob-griefing: false
       armorstand:
         step-height: 0.0
         set-name-visible-when-placing-with-custom-name: false
