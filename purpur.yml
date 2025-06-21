@@ -186,7 +186,7 @@ settings:
       distance: 0.5
     minecraft:gray_bed:
       distance: 0.5
-config-version: 43
+config-version: 41
 world-settings:
   default:
     blocks:
