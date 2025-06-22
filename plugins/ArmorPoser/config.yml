@@ -1,0 +1,5 @@
+enableConfigGui: true
+requirePermissions: false
+restrictResizeToOP: false
+resizeWhitelist:
+- ''
