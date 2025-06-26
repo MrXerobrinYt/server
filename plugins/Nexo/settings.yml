@@ -1,3 +1,24 @@
+NexoInventory:
+  menu_layout:
+    nexo_armor:
+      slot: 1
+      icon: forest_helmet
+      displayname: <green>Nexo Armor</green>
+    nexo_furniture:
+      slot: 2
+      icon: arm_chair
+      displayname: <green>Nexo Furniture</green>
+    nexo_tools:
+      slot: 3
+      icon: forest_axe
+      displayname: <green>Nexo Tools</green>
+  menu_rows: 6
+  menu_size: 45
+  main_menu_title: <shift:-37><glyph:menu_items>
+  next_page_icon: next_page_icon
+  previous_page_icon: previous_page_icon
+  exit_icon: cancel_icon
+  recipe_showcase_title: <shift:-7><glyph:menu_recipe>
 debug: false
 Plugin:
   keep_this_up_to_date: true
@@ -6,13 +27,9 @@ Plugin:
     repair:
       oraxen_durability_only: false
   generation:
-    default_assets: true
     default_configs: true
   formatting:
-    inventory_titles: true
-    titles: true
-    subtitles: true
-    action_bar: true
+    packets: true
     anvil: true
     signs: true
     chat: true
@@ -22,150 +39,78 @@ WorldEdit:
   stringblock_mechanic: false
   furniture_mechanic: false
 Glyphs:
-  glyph_handler: VANILLA
+  shift_font: nexo:shift
   emoji_list_permission_only: true
   unicode_completions: true
   chat_hover_text: <glyph_placeholder>
 Chat:
   chat_handler: MODERN
 CustomArmor:
+  auto_assign_settings: true
   type: COMPONENT
-  disable_leather_repair: true
-  component_settings:
-    auto_assign_component: true
-  trims_settings:
-    material_replacement: CHAINMAIL
-    auto_assign_settings: true
-  shader_settings:
-    type: FANCY
-    armor_resolution: 16
-    animated_armor_framerate: 24
-    generate_shader_compatible_armor: true
-    generate_armor_shader_files: true
-    generate_custom_armor_textures: true
 ItemUpdater:
   update_items: true
-  override_renamed_items: false
   override_item_lore: false
   update_items_on_reload: true
 FurnitureUpdater:
-  update_furniture: true
   update_on_reload: false
   update_on_load: false
-  experimental_furniture_type_update: false
-  experimental_fix_broken_furniture: false
 Pack:
+  obfuscation:
+    type: SIMPLE
+    cache: true
+  validate:
+    models: true
+    fonts: true
+    atlas: true
   dispatch:
-    send_pack: true
+    send_pre_join: true
     send_on_reload: true
     delay: -1
     mandatory: true
     prompt: <#fa4943>Accept the pack to enjoy a full <b><gradient:#9055FF:#13E2DA>Nexo</b><#fa4943>
       experience
-    join_message:
-      enabled: false
-      delay: -1
+    send_on_join: true
   server:
+    type: POLYMATH
+    selfhost:
+      port: 8082
+      dispatch_threads: 10
+    lobfile:
+      api_key: API-KEY
     polymath:
       server: atlas.nexomc.com
       secret: nexomc
+  generation:
+    generate_zip: true
+    minimize_json: true
+    excluded_file_extensions:
+    - .zip
+    - .tar.gz
+    packsquash:
+      enabled: false
+      executable_path: plugins/Nexo/pack/packsquash/packsquash
+      settings_path: plugins/Nexo/pack/packsquash/packsquash.toml
+  import:
+    default_assets: true
+    external_packs: true
+    from_location: []
+    from_url: []
+    external_pack_order: []
+    model_engine:
+      import_pack: true
+      exclude_shaders: true
 Misc:
+  block_other_resourcepacks: false
   reset_recipes: true
   add_recipes_to_book: true
   hide_scoreboard_numbers: false
   hide_scoreboard_background: false
   hide_tablist_background: false
-  armor_equip_event_bypass:
-  - FURNACE
-  - CHEST
-  - TRAPPED_CHEST
-  - BEACON
-  - DISPENSER
-  - DROPPER
-  - HOPPER
-  - WORKBENCH
-  - ENCHANTMENT_TABLE
-  - ENDER_CHEST
-  - ANVIL
-  - BED_BLOCK
-  - FENCE_GATE
-  - SPRUCE_FENCE_GATE
-  - BIRCH_FENCE_GATE
-  - ACACIA_FENCE_GATE
-  - JUNGLE_FENCE_GATE
-  - DARK_OAK_FENCE_GATE
-  - IRON_DOOR_BLOCK
-  - WOODEN_DOOR
-  - SPRUCE_DOOR
-  - BIRCH_DOOR
-  - JUNGLE_DOOR
-  - ACACIA_DOOR
-  - DARK_OAK_DOOR
-  - WOOD_BUTTON
-  - STONE_BUTTON
-  - TRAP_DOOR
-  - IRON_TRAPDOOR
-  - DIODE_BLOCK_OFF
-  - DIODE_BLOCK_ON
-  - REDSTONE_COMPARATOR_OFF
-  - REDSTONE_COMPARATOR_ON
-  - FENCE
-  - SPRUCE_FENCE
-  - BIRCH_FENCE
-  - JUNGLE_FENCE
-  - DARK_OAK_FENCE
-  - ACACIA_FENCE
-  - NETHER_FENCE
-  - BREWING_STAND
-  - CAULDRON
-  - LEGACY_SIGN_POST
-  - LEGACY_WALL_SIGN
-  - LEGACY_SIGN
-  - ACACIA_SIGN
-  - ACACIA_WALL_SIGN
-  - BIRCH_SIGN
-  - BIRCH_WALL_SIGN
-  - DARK_OAK_SIGN
-  - DARK_OAK_WALL_SIGN
-  - JUNGLE_SIGN
-  - JUNGLE_WALL_SIGN
-  - OAK_SIGN
-  - OAK_WALL_SIGN
-  - SPRUCE_SIGN
-  - SPRUCE_WALL_SIGN
-  - LEVER
-  - BLACK_SHULKER_BOX
-  - BLUE_SHULKER_BOX
-  - BROWN_SHULKER_BOX
-  - CYAN_SHULKER_BOX
-  - GRAY_SHULKER_BOX
-  - GREEN_SHULKER_BOX
-  - LIGHT_BLUE_SHULKER_BOX
-  - LIME_SHULKER_BOX
-  - MAGENTA_SHULKER_BOX
-  - ORANGE_SHULKER_BOX
-  - PINK_SHULKER_BOX
-  - PURPLE_SHULKER_BOX
-  - RED_SHULKER_BOX
-  - SILVER_SHULKER_BOX
-  - WHITE_SHULKER_BOX
-  - YELLOW_SHULKER_BOX
-  - DAYLIGHT_DETECTOR_INVERTED
-  - DAYLIGHT_DETECTOR
-  - BARREL
-  - BLAST_FURNACE
-  - SMOKER
-  - CARTOGRAPHY_TABLE
-  - COMPOSTER
-  - GRINDSTONE
-  - LECTERN
-  - LOOM
-  - STONECUTTER
-  - BELL
-  shield_display: '{"thirdperson_righthand":{"rotation":[0,90,0],"translation":[10,6,-4],"scale":[1,1,1]},"thirdperson_lefthand":{"rotation":[0,90,0],"translation":[10,6,12],"scale":[1,1,1]},"firstperson_righthand":{"rotation":[0,180,5],"translation":[-10,2,-10],"scale":[1.25,1.25,1.25]},"firstperson_lefthand":{"rotation":[0,180,5],"translation":[10,0,-10],"scale":[1.25,1.25,1.25]},"gui":{"rotation":[15,-25,-5],"translation":[2,3,0],"scale":[0.65,0.65,0.65]},"fixed":{"rotation":[0,180,0],"translation":[-2,4,-5],"scale":[0.5,0.5,0.5]},"ground":{"rotation":[0,0,0],"translation":[4,4,2],"scale":[0.25,0.25,0.25]}}'
-  bow_display: '{"thirdperson_righthand":{"rotation":[-80,260,-40],"translation":[-1,-2,2.5],"scale":[0.9,0.9,0.9]},"thirdperson_lefthand":{"rotation":[-80,-280,40],"translation":[-1,-2,2.5],"scale":[0.9,0.9,0.9]},"firstperson_righthand":{"rotation":[0,-90,25],"translation":[1.13,3.2,1.13],"scale":[0.68,0.68,0.68]},"firstperson_lefthand":{"rotation":[0,90,-25],"translation":[1.13,3.2,1.13],"scale":[0.68,0.68,0.68]}}'
-  crossbow_display: '{"thirdperson_righthand":{"rotation":[-90,0,-60],"translation":[2,0.1,-3],"scale":[0.9,0.9,0.9]},"thirdperson_lefthand":{"rotation":[-90,0,30],"translation":[2,0.1,-3],"scale":[0.9,0.9,0.9]},"firstperson_righthand":{"rotation":[-90,0,-55],"translation":[1.13,3.2,1.13],"scale":[0.68,0.68,0.68]},"firstperson_lefthand":{"rotation":[-90,0,35],"translation":[1.13,3.2,1.13],"scale":[0.68,0.68,0.68]}}'
 ConfigTools:
+  generate_default_configs: true
+  initial_custom_model_data: 1000
+  remove_invalid_furniture: false
   skipped_model_data_numbers: []
   disable_automatic_model_data: false
   disable_automatic_glyph_code: false
