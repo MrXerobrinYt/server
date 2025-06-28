@@ -1,5 +1,0 @@
-chat:
-  # The amount of messages displayed in the chat history during a dialogue
-  darken-limit: 12
-  # The amount of padding between the dialogue and the chat history
-  spacing: 3
