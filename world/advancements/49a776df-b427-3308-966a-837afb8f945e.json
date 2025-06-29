@@ -23,6 +23,12 @@
     },
     "done": true
   },
+  "superbwarfare:main/root": {
+    "criteria": {
+      "0": "2025-06-29 01:35:04 +0000"
+    },
+    "done": true
+  },
   "biomeswevegone:biomeswevegone/adventure/root": {
     "criteria": {
       "biomeswevegone:ironwood_gour": "2025-06-29 01:35:05 +0000"
@@ -39,12 +45,6 @@
   "minecraft:recipes/misc/yellow_dye_from_bwg_dye_tag": {
     "criteria": {
       "has_dye_tag": "2025-06-29 01:35:52 +0000"
-    },
-    "done": true
-  },
-  "superbwarfare:main/root": {
-    "criteria": {
-      "0": "2025-06-29 01:35:04 +0000"
     },
     "done": true
   },
