@@ -38,13 +38,20 @@
   "biomeswevegone:biomeswevegone/adventure/oh_the_biomes_weve_gone": {
     "criteria": {
       "biomeswevegone:red_rock_valley": "2025-06-29 01:35:57 +0000",
-      "biomeswevegone:ironwood_gour": "2025-06-29 01:35:05 +0000"
+      "biomeswevegone:ironwood_gour": "2025-06-29 01:35:05 +0000",
+      "biomeswevegone:baobab_savanna": "2025-06-29 02:15:58 +0000"
     },
     "done": false
   },
   "minecraft:recipes/misc/yellow_dye_from_bwg_dye_tag": {
     "criteria": {
       "has_dye_tag": "2025-06-29 01:35:52 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-06-29 02:15:49 +0000"
     },
     "done": true
   },
