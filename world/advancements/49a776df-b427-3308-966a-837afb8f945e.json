@@ -55,5 +55,11 @@
     },
     "done": true
   },
+  "minecolonies:recipes/misc/doublegrass": {
+    "criteria": {
+      "has_grass": "2025-07-02 10:03:12 +0000"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
