@@ -1,0 +1,15 @@
+{
+	id: "ff1cbb3d-83a4-3e36-916d-50e3cdf9e383"
+	type: "player"
+	player_name: "Teira_N"
+	ranks: { }
+	properties: {
+		"ftbteams:display_name": "Teira_N"
+		"ftbteams:description": ""
+		"ftbteams:color": "#FF59E0"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

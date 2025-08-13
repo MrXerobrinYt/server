@@ -1,0 +1,27 @@
+{
+	properties: {
+		"ftbteams:color": "#000102"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:description": ""
+		"ftbteams:display_name": "<)<)MIGMA(>(>"
+		"ftbteams:max_msg_history_size": 1000
+	}
+	extra: { }
+	owner: "33d0a3e6-e55e-4653-b5dc-a72deedf4afe"
+	id: "b7460a43-dbd5-4100-95b6-b70e79c864f9"
+	ranks: {
+		ff1cbb3d-83a4-3e36-916d-50e3cdf9e383: "member"
+		33d0a3e6-e55e-4653-b5dc-a72deedf4afe: "owner"
+		34a8e44a-4532-3018-8d7d-213c648c31fc: "member"
+	}
+	type: "party"
+	message_history: [
+		{ text: "{\"color\":\"yellow\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"MrTrivix\"}]}", date: 1755001038902L, from: "00000000-0000-0000-0000-000000000000" }
+		{ text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.invited\",\"with\":[{\"color\":\"yellow\",\"text\":\"Teira_N\"}]}", date: 1755002526060L, from: "33d0a3e6-e55e-4653-b5dc-a72deedf4afe" }
+		{ text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"Teira_N\"}]}", date: 1755002530233L, from: "00000000-0000-0000-0000-000000000000" }
+		{ text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.invited\",\"with\":[{\"color\":\"yellow\",\"text\":\"Ninhome\"}]}", date: 1755004854709L, from: "33d0a3e6-e55e-4653-b5dc-a72deedf4afe" }
+		{ text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.invited\",\"with\":[{\"color\":\"yellow\",\"text\":\"Ninhome\"}]}", date: 1755004938415L, from: "33d0a3e6-e55e-4653-b5dc-a72deedf4afe" }
+		{ text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.invited\",\"with\":[{\"color\":\"yellow\",\"text\":\"Ninhome\"}]}", date: 1755005347316L, from: "33d0a3e6-e55e-4653-b5dc-a72deedf4afe" }
+		{ text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"Ninhome\"}]}", date: 1755005369313L, from: "00000000-0000-0000-0000-000000000000" }
+	]
+}
