@@ -1,0 +1,15 @@
+{
+	id: "34a8e44a-4532-3018-8d7d-213c648c31fc"
+	type: "player"
+	player_name: "Ninhome"
+	ranks: { }
+	properties: {
+		"ftbteams:display_name": "Ninhome"
+		"ftbteams:description": ""
+		"ftbteams:color": "#FF6D59"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}
