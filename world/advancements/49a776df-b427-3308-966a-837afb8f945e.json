@@ -322,15 +322,87 @@
     },
     "done": true
   },
+  "hexcasting:lore/experiment1": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/experiment2": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2025-08-14 11:15:51 +0000"
     },
     "done": true
   },
+  "hexcasting:aab_big_cast": {
+    "criteria": {
+      "cast_amt": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/inventory": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:creative_unlocker": {
+    "criteria": {
+      "has_creative_unlocker": "2025-08-14 11:22:00 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:enlightenment": {
+    "criteria": {
+      "health_used": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
   "hexcasting:opened_eyes": {
     "criteria": {
       "health_used": "2025-08-14 11:19:33 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom4": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom3": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom5": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom2": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom1": {
+    "criteria": {
+      "grant": "2025-08-14 11:22:11 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:aaa_wasteful_cast": {
+    "criteria": {
+      "waste_amt": "2025-08-14 11:22:11 +0000"
     },
     "done": true
   },
