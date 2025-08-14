@@ -1,10 +1,4 @@
 {
-  "vinery:main/fruits_of_the_field": {
-    "criteria": {
-      "fruits_of_the_field": "2025-08-14 10:34:28 +0000"
-    },
-    "done": true
-  },
   "nethervinery:crimson_apple_press": {
     "criteria": {
       "has_the_recipe": "2025-08-14 10:33:22 +0000"
@@ -77,29 +71,9 @@
     },
     "done": true
   },
-  "beachparty:main/welcome_to_the_beach": {
-    "criteria": {
-      "enter_beach": "2025-08-14 10:34:10 +0000"
-    },
-    "done": true
-  },
   "nethervinery:warped_nether_bag": {
     "criteria": {
       "has_the_recipe": "2025-08-14 10:33:22 +0000"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:beach": "2025-08-14 10:34:10 +0000",
-      "minecraft:forest": "2025-08-14 10:33:23 +0000",
-      "minecraft:plains": "2025-08-14 10:34:28 +0000"
-    },
-    "done": false
-  },
-  "farm_and_charm:main/root": {
-    "criteria": {
-      "example_criterion": "2025-08-14 10:33:23 +0000"
     },
     "done": true
   },
@@ -205,12 +179,6 @@
     },
     "done": true
   },
-  "beachparty:main/root": {
-    "criteria": {
-      "example_criterion": "2025-08-14 10:33:23 +0000"
-    },
-    "done": true
-  },
   "nethervinery:warped_fermentation_barrel": {
     "criteria": {
       "has_the_recipe": "2025-08-14 10:33:22 +0000"
@@ -277,6 +245,62 @@
   "vinery:main/root": {
     "criteria": {
       "seeds": "2025-08-14 10:33:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2025-08-14 10:34:10 +0000",
+      "minecraft:forest": "2025-08-14 10:33:23 +0000",
+      "minecraft:plains": "2025-08-14 10:34:28 +0000"
+    },
+    "done": false
+  },
+  "farm_and_charm:main/root": {
+    "criteria": {
+      "example_criterion": "2025-08-14 10:33:23 +0000"
+    },
+    "done": true
+  },
+  "beachparty:main/root": {
+    "criteria": {
+      "example_criterion": "2025-08-14 10:33:23 +0000"
+    },
+    "done": true
+  },
+  "beachparty:main/welcome_to_the_beach": {
+    "criteria": {
+      "enter_beach": "2025-08-14 10:34:10 +0000"
+    },
+    "done": true
+  },
+  "vinery:main/fruits_of_the_field": {
+    "criteria": {
+      "fruits_of_the_field": "2025-08-14 10:34:28 +0000"
+    },
+    "done": true
+  },
+  "create:wrench_goggles": {
+    "criteria": {
+      "0": "2025-08-14 10:49:45 +0000"
+    },
+    "done": false
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_helmet": "2025-08-14 10:49:45 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:root": {
+    "criteria": {
+      "has_charged_amethyst": "2025-08-14 10:49:45 +0000"
+    },
+    "done": true
+  },
+  "ars_nouveau:novice_spell_book": {
+    "criteria": {
+      "has_novice_spell_book": "2025-08-14 10:49:45 +0000"
     },
     "done": true
   },
