@@ -79,7 +79,9 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:sunflower_plains": "2025-08-14 06:05:06 +0000"
+      "minecraft:sunflower_plains": "2025-08-14 06:05:06 +0000",
+      "minecraft:river": "2025-08-14 06:19:18 +0000",
+      "minecraft:plains": "2025-08-14 06:18:43 +0000"
     },
     "done": false
   },
@@ -263,6 +265,114 @@
   "vinery:main/root": {
     "criteria": {
       "seeds": "2025-08-14 06:05:06 +0000"
+    },
+    "done": true
+  },
+  "vinery:main/fruits_of_the_field": {
+    "criteria": {
+      "fruits_of_the_field": "2025-08-14 06:18:43 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/experiment1": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/experiment2": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:aab_big_cast": {
+    "criteria": {
+      "cast_amt": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:root": {
+    "criteria": {
+      "has_charged_amethyst": "2025-08-14 06:22:01 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/inventory": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "brewery:main/get_beer_nettle": {
+    "criteria": {
+      "beer_nettle": "2025-08-14 06:18:53 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:creative_unlocker": {
+    "criteria": {
+      "has_creative_unlocker": "2025-08-14 06:22:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-08-14 06:18:56 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:enlightenment": {
+    "criteria": {
+      "health_used": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:opened_eyes": {
+    "criteria": {
+      "health_used": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom4": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom3": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom5": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom2": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:lore/cardamom1": {
+    "criteria": {
+      "grant": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:aaa_wasteful_cast": {
+    "criteria": {
+      "waste_amt": "2025-08-14 06:22:04 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:y_u_no_cast_angy": {
+    "criteria": {
+      "did_the_thing": "2025-08-14 06:22:04 +0000"
     },
     "done": true
   },
