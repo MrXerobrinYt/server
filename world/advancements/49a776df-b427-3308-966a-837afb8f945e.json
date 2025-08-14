@@ -286,6 +286,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-14 06:38:56 +0000"
+    },
+    "done": true
+  },
   "hexcasting:aab_big_cast": {
     "criteria": {
       "cast_amt": "2025-08-14 06:22:04 +0000"
