@@ -328,5 +328,17 @@
     },
     "done": true
   },
+  "hexcasting:opened_eyes": {
+    "criteria": {
+      "health_used": "2025-08-14 11:19:33 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:y_u_no_cast_angy": {
+    "criteria": {
+      "did_the_thing": "2025-08-14 11:18:09 +0000"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
