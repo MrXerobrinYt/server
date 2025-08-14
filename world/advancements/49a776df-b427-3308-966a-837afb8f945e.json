@@ -304,12 +304,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/sleep_in_bed": {
-    "criteria": {
-      "slept_in_bed": "2025-08-14 11:06:36 +0000"
-    },
-    "done": true
-  },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "bread": "2025-08-14 11:06:08 +0000"
@@ -319,6 +313,18 @@
   "minecraft:husbandry/root": {
     "criteria": {
       "consumed_item": "2025-08-14 11:06:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2025-08-14 11:06:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-14 11:15:51 +0000"
     },
     "done": true
   },
