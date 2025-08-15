@@ -322,6 +322,30 @@
     },
     "done": true
   },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-14 11:15:51 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:y_u_no_cast_angy": {
+    "criteria": {
+      "did_the_thing": "2025-08-14 11:18:09 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:opened_eyes": {
+    "criteria": {
+      "health_used": "2025-08-14 11:19:33 +0000"
+    },
+    "done": true
+  },
+  "hexcasting:creative_unlocker": {
+    "criteria": {
+      "has_creative_unlocker": "2025-08-14 11:22:00 +0000"
+    },
+    "done": true
+  },
   "hexcasting:lore/experiment1": {
     "criteria": {
       "grant": "2025-08-14 11:22:11 +0000"
@@ -331,12 +355,6 @@
   "hexcasting:lore/experiment2": {
     "criteria": {
       "grant": "2025-08-14 11:22:11 +0000"
-    },
-    "done": true
-  },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2025-08-14 11:15:51 +0000"
     },
     "done": true
   },
@@ -352,21 +370,9 @@
     },
     "done": true
   },
-  "hexcasting:creative_unlocker": {
-    "criteria": {
-      "has_creative_unlocker": "2025-08-14 11:22:00 +0000"
-    },
-    "done": true
-  },
   "hexcasting:enlightenment": {
     "criteria": {
       "health_used": "2025-08-14 11:22:11 +0000"
-    },
-    "done": true
-  },
-  "hexcasting:opened_eyes": {
-    "criteria": {
-      "health_used": "2025-08-14 11:19:33 +0000"
     },
     "done": true
   },
@@ -403,12 +409,6 @@
   "hexcasting:aaa_wasteful_cast": {
     "criteria": {
       "waste_amt": "2025-08-14 11:22:11 +0000"
-    },
-    "done": true
-  },
-  "hexcasting:y_u_no_cast_angy": {
-    "criteria": {
-      "did_the_thing": "2025-08-14 11:18:09 +0000"
     },
     "done": true
   },
