@@ -306,7 +306,8 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "bread": "2025-08-14 11:06:08 +0000"
+      "bread": "2025-08-14 11:06:08 +0000",
+      "melon_slice": "2025-08-15 10:29:02 +0000"
     },
     "done": false
   },
@@ -412,6 +413,12 @@
     },
     "done": true
   },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2025-08-15 10:22:56 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:spider": "2025-08-15 10:26:52 +0000",
@@ -422,12 +429,6 @@
   "minecraft:adventure/kill_a_mob": {
     "criteria": {
       "minecraft:zombie": "2025-08-15 10:25:12 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/form_obsidian": {
-    "criteria": {
-      "obsidian": "2025-08-15 10:22:56 +0000"
     },
     "done": true
   },
