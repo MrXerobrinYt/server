@@ -1,4 +1,10 @@
 {
+  "vinery:main/fruits_of_the_field": {
+    "criteria": {
+      "fruits_of_the_field": "2025-08-15 09:44:50 +0000"
+    },
+    "done": true
+  },
   "nethervinery:crimson_apple_press": {
     "criteria": {
       "has_the_recipe": "2025-08-15 09:41:38 +0000"
@@ -86,7 +92,9 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:beach": "2025-08-15 09:42:21 +0000",
-      "minecraft:forest": "2025-08-15 09:41:39 +0000"
+      "minecraft:forest": "2025-08-15 09:41:39 +0000",
+      "minecraft:old_growth_birch_forest": "2025-08-15 09:43:24 +0000",
+      "minecraft:plains": "2025-08-15 09:44:50 +0000"
     },
     "done": false
   },
