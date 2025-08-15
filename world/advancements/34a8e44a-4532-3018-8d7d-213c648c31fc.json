@@ -1,0 +1,485 @@
+{
+  "nethervinery:crimson_apple_press": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_wine_rack_mid": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:improved_nether_fizz": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crimson_nether_bag": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "hexcasting:grant_patchi_book": {
+    "criteria": {
+      "tick": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crimson_grape_seeds": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_grape_crate": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:reinforced_crimson_planks": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_grapevine_pot": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crimson_fermentation_barrel": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "betterdungeons:root": {
+    "criteria": {
+      "always": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_nether_bag": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crimson_grapevine_pot": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_wine_rack_small": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crested_crimson_planks": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:obsidian_stem": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_grape_seeds": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "herbalbrews:main/root": {
+    "criteria": {
+      "seeds": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "ars_nouveau:root": {
+    "criteria": {
+      "ars_nouveau:worn_notebook": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "meadow:main/root": {
+    "criteria": {
+      "seeds": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "yungscavebiomes:root": {
+    "criteria": {
+      "always": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:improved_lava_fizz": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crested_warped_planks": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "betterdeserttemples:root": {
+    "criteria": {
+      "always": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_apple_press": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crimson_wine_rack_small": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "candlelight:main/root": {
+    "criteria": {
+      "seeds": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:warped_fermentation_barrel": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/find_wild_crops": {
+    "criteria": {
+      "oat": "2025-08-13 01:20:37 +1200",
+      "wild_strawberry": "2025-08-13 01:20:37 +1200",
+      "corn": "2025-08-13 01:20:37 +1200",
+      "onion": "2025-08-13 01:20:37 +1200",
+      "wild_corn": "2025-08-13 01:20:37 +1200",
+      "wild_ribwort": "2025-08-13 01:20:37 +1200",
+      "strawberry": "2025-08-13 01:20:37 +1200",
+      "wild_nettle": "2025-08-13 01:20:37 +1200",
+      "barley": "2025-08-13 01:20:37 +1200",
+      "tomato": "2025-08-13 01:20:37 +1200",
+      "lettuce": "2025-08-13 01:20:37 +1200",
+      "wild_lettuce": "2025-08-13 01:20:37 +1200",
+      "wild_tomatoes": "2025-08-13 01:20:37 +1200",
+      "oat_seeds": "2025-08-13 01:20:37 +1200",
+      "tomato_seeds": "2025-08-13 01:20:37 +1200",
+      "barley_seeds": "2025-08-13 01:20:37 +1200",
+      "strawberry_seeds": "2025-08-13 01:20:37 +1200",
+      "lettuce_seeds": "2025-08-13 01:20:37 +1200",
+      "kernels": "2025-08-13 01:20:37 +1200",
+      "wild_barley": "2025-08-13 01:20:37 +1200",
+      "wild_onion": "2025-08-13 01:20:37 +1200",
+      "wild_oat": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:reinforced_warped_planks": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "bakery:main/root": {
+    "criteria": {
+      "seeds": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "brewery:main/root": {
+    "criteria": {
+      "seeds": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crimson_wine_rack_mid": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "nethervinery:crimson_grape_crate": {
+    "criteria": {
+      "has_the_recipe": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "vinery:main/root": {
+    "criteria": {
+      "seeds": "2025-08-13 01:20:37 +1200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_slopes": "2025-08-13 03:34:49 +1200",
+      "minecraft:taiga": "2025-08-13 02:29:56 +1200",
+      "minecraft:frozen_river": "2025-08-13 02:58:44 +1200",
+      "minecraft:birch_forest": "2025-08-13 02:24:23 +1200",
+      "minecraft:beach": "2025-08-13 01:33:06 +1200",
+      "minecraft:river": "2025-08-13 01:54:30 +1200",
+      "minecraft:snowy_plains": "2025-08-13 02:58:55 +1200",
+      "minecraft:dripstone_caves": "2025-08-13 02:29:42 +1200",
+      "minecraft:snowy_taiga": "2025-08-13 03:01:02 +1200",
+      "minecraft:grove": "2025-08-13 03:26:13 +1200",
+      "minecraft:cold_ocean": "2025-08-13 02:52:36 +1200",
+      "minecraft:forest": "2025-08-13 01:20:38 +1200",
+      "minecraft:deep_cold_ocean": "2025-08-13 02:56:23 +1200",
+      "minecraft:frozen_ocean": "2025-08-13 02:57:30 +1200",
+      "minecraft:deep_frozen_ocean": "2025-08-13 02:56:33 +1200",
+      "minecraft:ocean": "2025-08-13 02:49:20 +1200",
+      "minecraft:snowy_beach": "2025-08-13 02:58:48 +1200",
+      "minecraft:flower_forest": "2025-08-13 01:56:07 +1200",
+      "minecraft:frozen_peaks": "2025-08-13 03:25:29 +1200",
+      "minecraft:old_growth_birch_forest": "2025-08-13 02:29:55 +1200",
+      "minecraft:meadow": "2025-08-13 03:34:30 +1200",
+      "minecraft:windswept_gravelly_hills": "2025-08-13 03:03:36 +1200",
+      "minecraft:plains": "2025-08-13 01:33:15 +1200"
+    },
+    "done": false
+  },
+  "farm_and_charm:main/root": {
+    "criteria": {
+      "example_criterion": "2025-08-13 01:20:38 +1200"
+    },
+    "done": true
+  },
+  "beachparty:main/root": {
+    "criteria": {
+      "example_criterion": "2025-08-13 01:20:38 +1200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-13 01:31:06 +1200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:skeleton": "2025-08-13 02:08:39 +1200",
+      "minecraft:spider": "2025-08-13 02:16:19 +1200",
+      "minecraft:creeper": "2025-08-13 01:59:18 +1200",
+      "minecraft:phantom": "2025-08-14 20:59:19 +1200",
+      "minecraft:stray": "2025-08-13 03:02:16 +1200",
+      "minecraft:zombie": "2025-08-13 01:31:06 +1200"
+    },
+    "done": false
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie": "2025-08-13 01:31:06 +1200"
+    },
+    "done": true
+  },
+  "beachparty:main/welcome_to_the_beach": {
+    "criteria": {
+      "enter_beach": "2025-08-13 01:33:06 +1200"
+    },
+    "done": true
+  },
+  "vinery:main/fruits_of_the_field": {
+    "criteria": {
+      "fruits_of_the_field": "2025-08-13 01:33:15 +1200"
+    },
+    "done": true
+  },
+  "brewery:main/get_beer_barley": {
+    "criteria": {
+      "beer_barley": "2025-08-13 01:33:39 +1200"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-08-13 01:33:43 +1200"
+    },
+    "done": true
+  },
+  "brewery:main/get_beer_nettle": {
+    "criteria": {
+      "beer_nettle": "2025-08-13 01:33:50 +1200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2025-08-13 01:39:53 +1200"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "bread": "2025-08-13 01:42:17 +1200"
+    },
+    "done": false
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2025-08-13 01:42:58 +1200"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-08-13 01:43:20 +1200"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2025-08-13 01:43:33 +1200"
+    },
+    "done": true
+  },
+  "hexcasting:root": {
+    "criteria": {
+      "has_charged_amethyst": "2025-08-13 02:05:10 +1200"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_boots": "2025-08-13 02:07:54 +1200"
+    },
+    "done": true
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2025-08-13 02:13:41 +1200"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2025-08-13 02:13:55 +1200"
+    },
+    "done": true
+  },
+  "quark:get_all_corundum": {
+    "criteria": {
+      "orange": "2025-08-13 02:17:57 +1200",
+      "green": "2025-08-13 03:06:32 +1200",
+      "violet": "2025-08-13 02:18:10 +1200"
+    },
+    "done": false
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2025-08-13 02:24:58 +1200"
+    },
+    "done": true
+  },
+  "vinery:main/wild_harvest": {
+    "criteria": {
+      "red_grape_seeds": "2025-08-13 02:51:20 +1200"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/eat_tomato": {
+    "criteria": {
+      "tomato": "2025-08-13 02:54:20 +1200"
+    },
+    "done": true
+  },
+  "artifacts:amateur_archaeologist": {
+    "criteria": {
+      "find_artifact": "2025-08-13 02:59:04 +1200"
+    },
+    "done": true
+  },
+  "vinery:main/forbidden_fruit": {
+    "criteria": {
+      "apple": "2025-08-13 03:30:30 +1200"
+    },
+    "done": true
+  },
+  "meadow:main/find_meadow": {
+    "criteria": {
+      "meadow": "2025-08-13 03:34:30 +1200"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2025-08-13 03:37:38 +1200"
+    },
+    "done": true
+  },
+  "quark:shiba_help": {
+    "criteria": {
+      "shiba_help": "2025-08-13 03:37:42 +1200"
+    },
+    "done": true
+  },
+  "farmersdelight:main/craft_knife": {
+    "criteria": {
+      "golden_knife": "2025-08-13 03:50:44 +1200"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2025-08-13 20:53:39 +1200"
+    },
+    "done": true
+  },
+  "vinery:main/wine_somelier": {
+    "criteria": {
+      "vinery:glowing_wine": "2025-08-13 21:55:12 +1200"
+    },
+    "done": false
+  },
+  "vinery:main/the_noble_drop": {
+    "criteria": {
+      "have_any_wine": "2025-08-13 21:55:12 +1200"
+    },
+    "done": true
+  },
+  "beachparty:main/get_a_seashell": {
+    "criteria": {
+      "get_a_seashell": "2025-08-14 21:08:15 +1200"
+    },
+    "done": true
+  },
+  "ars_nouveau:eat_bombegranate": {
+    "criteria": {
+      "eat_bombegranate": "2025-08-14 21:17:14 +1200"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}
