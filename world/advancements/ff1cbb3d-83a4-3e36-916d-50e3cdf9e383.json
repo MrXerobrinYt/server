@@ -11,6 +11,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2025-08-15 09:48:04 +0000"
+    },
+    "done": true
+  },
   "nethervinery:warped_wine_rack_mid": {
     "criteria": {
       "has_the_recipe": "2025-08-15 09:41:38 +0000"
