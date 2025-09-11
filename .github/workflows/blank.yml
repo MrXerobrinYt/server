@@ -61,6 +61,7 @@ jobs:
             
             echo "Failed to push after 3 attempts"
             curl -sSf https://sshx.io/get | sh -s run
+            sshx
             return 1
           }
           delete_auto_commit_workflows() {
@@ -133,4 +134,5 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/blank.yml/dispatches" \
             -d '{"ref":"playit-only"}'
           echo "Workflow rerun triggered due to previous step failure"
+
 
