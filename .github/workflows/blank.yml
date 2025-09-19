@@ -32,7 +32,7 @@ jobs:
           chmod +x playit-linux-amd64
           echo "$PLAYIT_SECRET" > playit.toml
           echo "Starting Spigot..."
-          java -Dfile.encoding=utf-8 -server -Xmx6G -Xms1536M -XX:+AggressiveOpts -XX:UseSSE=4 -XX:+UseFastAccessorMethods -jar server.jar
+          java -Dfile.encoding=utf-8 -server -Xmx6G -Xms1536M -XX:UseSSE=4 -XX:+UseFastAccessorMethods -jar server.jar
           SPIGOT_PID=$!
           echo "Spigot started with PID $SPIGOT_PID"
           echo "Starting playit..."
@@ -149,6 +149,7 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/blank.yml/dispatches" \
             -d '{"ref":"playit-only"}'
           echo "Workflow rerun triggered due to previous step failure"
+
 
 
 
